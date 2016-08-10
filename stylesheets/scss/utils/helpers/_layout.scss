@@ -1,0 +1,299 @@
+// scss-lint:disable ImportantRule, SelectorFormat
+
+.overflow {
+    &--scroll {
+        overflow: scroll;
+
+        &-imp {
+            overflow: scroll !important;
+        }
+    }
+
+    &--xscroll {
+        overflow-x: scroll;
+
+        &-imp {
+            overflow-x: scroll !important;
+        }
+    }
+
+    &--xscroll {
+        overflow-x: scroll;
+
+        &-imp {
+            overflow-x: scroll !important;
+        }
+    }
+
+    &--hidden {
+        overflow: hidden;
+
+        &-imp {
+            overflow: hidden !important;
+        }
+    }
+
+    &--xhidden {
+        overflow-x: hidden;
+
+        &-imp {
+            overflow-x: hidden !important;
+        }
+    }
+
+    &--yhidden {
+        overflow-y: hidden;
+
+        &-imp {
+            overflow-y: hidden !important;
+        }
+    }
+}
+
+.overflow--hidden {
+    overflow: hidden;
+
+	&--imp {
+		overflow: hidden !important;
+	}
+}
+
+.hide {
+    display: none;
+
+	&--imp {
+		display: none !important;
+	}
+}
+
+
+.show {
+    display: block;
+
+	&--imp {
+		display: block !important;
+	}
+}
+
+.visible {
+	visibility: visible;
+
+	&--imp {
+		visibility: visible !important;
+	}
+}
+
+.not_visible {
+	visibility: hidden;
+
+	&--imp {
+		visibility: hidden !important;
+	}
+}
+
+.block {
+    display: block;
+
+	&--imp {
+		display: block !important;
+	}
+}
+
+
+.inline_block {
+	display: inline-block;
+
+	&--imp {
+		display: inline-block !important;
+	}
+}
+
+.vert_align {
+    &--top {
+        @include vertical-align(top);
+
+        &-imp {
+            @include vertical-align(top !important);
+        }
+    }
+
+    &--middle {
+        @include vertical-align(middle);
+
+        &-imp {
+            @include vertical-align(middle !important);
+        }
+    }
+
+    &--bottom {
+        @include vertical-align(bottom);
+
+        &-imp {
+            @include vertical-align(bottom !important);
+        }
+    }
+
+    &--baseline {
+        @include vertical-align(baseline);
+
+        &-imp {
+            @include vertical-align(baseline !important);
+        }
+    }
+}
+
+.opacity_show {
+	opacity: 1;
+
+	&--imp {
+		opacity: 1 !important;
+	}
+}
+
+.opacity_hide {
+	opacity: 0;
+
+	&--imp {
+		opacity: 0 !important;
+	}
+}
+//width & height helper classes
+
+.height--100 {
+    @include height(100%);
+
+    &-imp {
+         @include height(100% !important);
+    }
+}
+
+.height--vh {
+    @include height(100vh);
+
+    &-imp {
+       @include height(100vh !important);
+    }
+}
+
+.width {
+    &--25 {
+        @include width(25%);
+
+        &-imp {
+            @include width(25% !important);
+        }
+    }
+
+    &--40 {
+        @include width(40%);
+
+        &-imp {
+            @include width(40% !important);
+        }
+    }
+
+    &--50 {
+        @include width(50%);
+
+        &-imp {
+            @include width(50% !important);
+        }
+    }
+
+    &--60 {
+        @include width(60%);
+
+        &-imp {
+            @include width(60% !important);
+        }
+    }
+
+    &--75 {
+        @include width(75%);
+
+        &-imp {
+            @include width(75% !important);
+        }
+    }
+
+    &--100 {
+        @include width(100%);
+
+        &-imp {
+            @include width(100% !important);
+        }
+    }
+}
+
+// to make text ellipse
+
+.ellipse {
+	@include ellipse();
+}
+
+// to make inline elements to behave like block level elements with vertical rythm
+
+.vertical_rythm--block {
+    display: block;
+    @extend %vertical-rythm;
+}
+
+
+// Following classes don't have corresponding important version. They will be added
+// as need arises.
+
+.position--relative {
+	position: relative;
+}
+
+.float--right {
+    float: right;
+}
+
+.float--left {
+    float: left;
+}
+
+//classes for making element center
+
+.mrgn {
+    &_auto {
+        margin-right: auto;
+        margin-left: auto;
+
+        &--imp {
+            margin-right: auto !important;
+            margin-left: auto !important;
+        }
+    }
+}
+
+.center {
+	&_all {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		transform: translate(-50%, -50%);
+	}
+
+	&_vert {
+		position: absolute;
+		top: 50%;
+
+		transform: translateY(-50%);
+	}
+
+	&_hori {
+		position: absolute;
+		left: 50%;
+
+		transform: translateX(-50%);
+	}
+}
+
+//clearfix
+
+.clearfix {
+	@include clearfix;
+}

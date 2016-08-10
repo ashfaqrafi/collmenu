@@ -1,0 +1,83 @@
+/// @prop colors
+/// @author Kamal Sharif
+/// @access public
+$colors: (
+    'primary': (
+        'base': #f2ef3b
+    ),
+
+    'secondary': (
+        'base': #99f23a
+    ),
+
+    'accent': (
+        'base': #f2933a
+    ),
+
+    'foreground': (
+        'base': #333,
+        'light': #ccc
+    ),
+
+    'background': (
+        'base': #fff,
+        'sidecolor': #B3E5FC,
+		    'dark': #e3e3e3,
+        'top' : #f3f3f4,
+        'brand': #FFF9C4,
+        'hover-color': #4DB6AC,
+        'darker': #E0E0E0,
+        'bg-chk': #EAF0F4,
+        'tran': #42A5F5,
+        'bg-col': #1976D2,
+        'nav-bg': #1E88E5,
+        'clicked': #278EE8,
+        'not': #F3B13A,
+        'bdg': #F5F7FA,
+        'pro': #E5E5ED,
+        'cov': #1E7BD8,
+        'mild': #36a2eb,
+    ),
+
+    'border': (
+        'button': #ccc,
+        'form': #ccc
+    ),
+
+    'button': (
+        'login': #64B5F6,
+        'save': #0785a5,
+        'cancel': #f2a978,
+        'delete': #d86144,
+        'clear': #F1894E,
+        'bg-col': #1976D2,
+        'mod-btn': #AAB6D1,
+        'btn-col': #00C853,
+        'new-btn': #62BEF6,
+        'st': #848E93,
+        'duser': #E43030,
+        'del': #E02A2A,
+
+    ),
+
+    'font': (
+        'head': #798891,
+        'para': #37474F,
+        'ancor': #A6B0B6,
+        'pure': #000,
+    ),
+
+    'form': (
+        'success': #12BF16,
+        'error': #d86144,
+    )
+) !default;
+
+
+/// @prop colors
+/// @author Kamal Sharif
+/// @access public
+$colors-mix: (
+    'white-mix': #fff,
+    'black-mix': #000
+) !default;

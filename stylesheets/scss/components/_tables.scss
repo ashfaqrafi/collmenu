@@ -1,0 +1,26 @@
+#reactive-table-orders td {
+    // css goes here
+    background: map-deep-get($colors, "background", "base");
+}
+
+#reactive-table-patients tr {
+    // css goes here
+    background: map-deep-get($colors, "background", "base");
+}
+
+
+.reactive-table-options{
+    margin-top: 2rem;
+    float: left !important;
+  .reactive-table-filter{
+    float: left !important;
+  }
+}
+
+.refId{
+
+  a{
+    font-weight: 400 !important;
+    color: map-deep-get($colors, "background", "tran");
+  }
+}

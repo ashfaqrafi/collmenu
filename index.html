@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Collapse Menu</title>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+	</head>
+	<body>
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+
+					<img src="/images/menu.png" class="navbar-toggle collapsed" data-toggle="collapse" id="trigger-overlay" alt="" />
+
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">Home <span id="trigger-overlay"></span></a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Clients</a></li>
+        <li><a href="#">Contact</a></li>
+
+      </ul>
+
+
+    </div>
+  </div>
+</nav>
+
+		<div class="overlay overlay-hugeinc">
+			<button type="button" class="overlay-close">Close</button>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">Clients</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+
+
+
+    <script src="bower_components\jquery\dist\jquery.min.js" type="text/javascript"></script>
+    <script src="bower_components\bootstrap\dist\js\bootstrap.min.js" type="text/javascript"></script>
+		<script src="js/modernizr.custom.js"></script>
+    <script src="js/classie.js"></script>
+		<script src="js/demo1.js"></script>
+
+	</body>
+</html>

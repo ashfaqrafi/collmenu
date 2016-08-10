@@ -1,0 +1,11 @@
+/// @prop container width
+/// @author Kamal Sharif
+/// @access public
+$container-widths: (
+	'desktop': 1250px,
+	'tablet-landscape': 1100px,
+	'tablet-portrait': 850px,
+	'androidtab': 768px,
+	'phablet': 480px,
+	'mobile': 365px
+) !default;

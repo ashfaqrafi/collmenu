@@ -1,0 +1,7 @@
+/// @name borders
+/// @author Kamal Sharif
+/// @access public
+
+@mixin border($border-width: 1px, $border-style: solid, $border-color: map-deep-get($colors, 'border', 'button')) {
+    border: $border-width $border-style $border-color;       
+}

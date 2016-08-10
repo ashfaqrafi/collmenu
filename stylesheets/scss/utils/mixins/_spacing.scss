@@ -1,0 +1,101 @@
+/// @name margin
+/// @author Kamal Sharif
+/// @access public
+@mixin margin($margin) {
+    margin: $margin;
+}
+
+/// @name margin-top
+/// @author Kamal Sharif
+/// @access public
+@mixin margin-top($margin-top) {
+    margin-top: $margin-top;
+}
+
+/// @name margin-right
+/// @author Kamal Sharif
+/// @access public
+@mixin margin-right($margin-right) {
+    margin-right: $margin-right;  
+}
+
+/// @name margin-bottom
+/// @author Kamal Sharif
+/// @access public
+@mixin margin-bottom($margin-bottom) {
+    margin-bottom: $margin-bottom;
+}
+
+/// @name margin-bottom
+/// @author Kamal Sharif
+/// @access public
+@mixin margin-left($margin-left) {
+    margin-left: $margin-left;
+}
+
+/// @name margin-horizontal
+/// @author Kamal Sharif
+/// @access public
+@mixin margin-horizontal($margin-right, $margin-left) {
+    margin-right: $margin-right;
+    margin-left: $margin-left;
+}
+
+/// @name margin-vertical
+/// @author Kamal Sharif
+/// @access public
+@mixin margin-vertical($margin-top, $margin-bottom) {
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+}
+
+/// @name padding
+/// @author Kamal Sharif
+/// @access public
+@mixin padding($padding) {
+    padding: $padding;
+}
+
+/// @name padding-top
+/// @author Kamal Sharif
+/// @access public
+@mixin padding-top($padding-top) {
+    padding-top: $padding-top;
+}
+
+/// @name padding-right
+/// @author Kamal Sharif
+/// @access public
+@mixin padding-right($padding-right) {
+    padding-right: $padding-right;
+}
+
+/// @name padding-bottom
+/// @author Kamal Sharif
+/// @access public
+@mixin padding-bottom($padding-bottom) {
+    padding-bottom: $padding-bottom;
+}
+
+/// @name padding-bottom
+/// @author Kamal Sharif
+/// @access public
+@mixin padding-left($padding-left) {
+    padding-left: $padding-left;
+}
+
+/// @name padding-horizontal
+/// @author Kamal Sharif
+/// @access public
+@mixin padding-horizontal($padding-right, $padding-left) {
+    padding-right: $padding-right;
+    padding-left: $padding-left;
+}
+
+/// @name padding-vertical
+/// @author Kamal Sharif
+/// @access public
+@mixin padding-vertical($padding-top, $padding-bottom) {
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+}

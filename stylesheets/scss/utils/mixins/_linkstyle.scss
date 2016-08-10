@@ -1,0 +1,865 @@
+// scss-lint:disable DeclarationOrder, NestingDepth
+
+/// @name bottom-bar-animation
+/// @author Kamal Sharif
+/// @access public
+
+@mixin bottombar-animation($scale-value: 0, $trans-duration: 0.3s, $trans-style: linear, $trans-delay: 0.1s) {
+    transform: scaleX($scale-value);
+    transition: transform $trans-duration $trans-style $trans-delay;
+}
+
+/// @name bottombar-animation--default
+/// @author Kamal Sharif
+/// @access public
+%bottombar-animation--default {
+    @include bottombar-animation(0, 0.2s, ease-out);
+}
+
+/// @name bottombar-animation--hover
+/// @author Kamal Sharif
+/// @access public
+%bottombar-animation--hover {
+    @include bottombar-animation(1, 0.3s, ease-in);
+}
+
+/// @name bottom-bar
+/// @author Kamal Sharif
+/// @access public
+
+@mixin bottombar($bottom-val: 10px, $left-val: 10px, $height: 2px, $width: 80%, $bg: map-deep-get($colors, 'accent', 'base')) {
+    a {
+        position: relative;
+        
+        &::after {
+            position: absolute;
+            bottom: $bottom-val;
+            left: $left-val;
+            
+            height: $height;
+            width: $width;
+            
+            background-color: $bg;
+            
+            content: '';
+            @extend %bottombar-animation--default;
+        }
+        
+        &:hover {
+            &::after {
+                @extend %bottombar-animation--hover;
+            }
+        }
+        
+        &:active {
+            &::after {
+                @extend %bottombar-animation--hover;
+            }
+        }
+        
+        &:focus {
+            &::after {
+                @extend %bottombar-animation--hover;
+            }
+        }
+    }
+}
+
+/// @name top-bar
+/// @author Kamal Sharif
+/// @access public
+
+@mixin topbar($top-val: 10px, $left-val: 10px, $height: 2px, $width: 80%, $bg: map-deep-get($colors, 'accent', 'base')) {
+    a {
+        position: relative;
+        
+        &::before {
+            position: absolute;
+            top: $top-val;
+            left: $left-val;
+            
+            height: $height;
+            width: $width;
+            
+            background-color: $bg;
+            
+            content: '';
+            @extend %bottombar-animation--default;
+        }
+        
+        &:hover {
+            &::before {
+                @extend %bottombar-animation--hover;
+            }
+        } 
+        
+        &:active {
+            &::before {
+                @extend %bottombar-animation--hover;
+            }
+        } 
+        
+        &:focus {
+            &::before {
+                @extend %bottombar-animation--hover;
+            }
+        }
+    }
+}
+
+/// @name right-bar animation
+/// @author Kamal Sharif
+/// @access public
+
+@mixin rightbar-animation($scale-value: 0, $trans-duration: 0.3s, $trans-style: linear, $trans-delay: 0.1s) {
+    transform: rotate(90deg) scale($scale-value);
+    transition: transform $trans-duration $trans-style $trans-delay;
+}
+
+/// @name rightbar-animation--default
+/// @author Kamal Sharif
+/// @access public
+%rightbar-animation--default {
+    @include rightbar-animation(0, 0.2s, ease-out);
+}
+
+/// @name rightbar-animation--hover
+/// @author Kamal Sharif
+/// @access public
+%rightbar-animation--hover {
+    @include rightbar-animation(1, 0.3s, ease-in);
+}
+
+
+/// @name right-bar
+/// @author Kamal Sharif
+/// @access public
+
+@mixin rightbar($left-val: 75%, $bottom-val: 30px, $height: 2px, $width: 40px, $bg: map-deep-get($colors, 'accent', 'base')) {
+    a {
+        position: relative;
+        
+        &::before {
+            position: absolute;
+            left: $left-val;
+            bottom: $bottom-val;
+            
+            height: $height;
+            width: $width;
+            
+            background-color: $bg;
+            
+            content: '';
+            @extend %rightbar-animation--default;
+        }
+        
+        &:hover {
+            &::before {
+                @extend %rightbar-animation--hover;
+            }
+        } 
+        
+        &:active {
+            &::before {
+                @extend %rightbar-animation--hover;
+            }
+        } 
+        
+        &:focus {
+            &::before {
+                @extend %rightbar-animation--hover;
+            }
+        }
+    }
+}
+
+/// @name bottom-bar animation
+/// @author Kamal Sharif
+/// @access public
+
+@mixin bottombar-slide-animation($translate-value: 0, $trans-duration: 0.3s, $trans-style: linear, $trans-delay: 0.1s) {
+    transform: translateX($translate-value);
+    transition: transform $trans-duration $trans-style $trans-delay;
+}
+
+/// @name bottombar-slide-animation--hover
+/// @author Kamal Sharif
+/// @access public
+%bottombar-slide-animation--hover {
+     @include bottombar-slide-animation(0, 0.3s, ease-in);
+}
+
+/// @name bottom-bar
+/// @author Kamal Sharif
+/// @access public
+
+@mixin bottombar-slide($bottom-val: 10px, $left-val: 0, $height: 2px, $width: 100%, $bg: map-deep-get($colors, 'accent', 'base')) {
+    a {
+        position: relative;
+        
+        overflow: hidden;
+        
+        &::after {
+            position: absolute;
+            bottom: $bottom-val;
+            left: $left-val;
+            
+            height: $height;
+            width: $width;
+            
+            background-color: $bg;
+            
+            content: '';
+            @include bottombar-slide-animation(-115%, 0.2s, ease-out);
+        }
+        
+        &:hover {
+            &::after {
+                @extend %bottombar-slide-animation--hover;
+            }
+        }
+        
+        &:active {
+            &::after {
+                @extend %bottombar-slide-animation--hover;
+            }
+        }
+        
+        &:focus {
+            &::after {
+                @extend %bottombar-slide-animation--hover;
+            }
+        }
+    }
+}
+
+/// @name top-bar
+/// @author Kamal Sharif
+/// @access public
+
+@mixin topbar-slide($top-val: 10px, $left-val: 0, $height: 2px, $width: 100%, $bg: map-deep-get($colors, 'accent', 'base')) {
+    a {
+        position: relative;
+        
+        overflow: hidden;
+        
+        &::before {
+            position: absolute;
+            top: $top-val;
+            left: $left-val;
+            
+            height: $height;
+            width: $width;
+            
+            background-color: $bg;
+            
+            content: '';
+            @include bottombar-slide-animation(100%, 0.2s, ease-out);
+        }
+        
+        &:hover {
+            &::before {
+                @extend %bottombar-slide-animation--hover;
+            }
+        }
+        
+        &:active {
+            &::before {
+                @extend %bottombar-slide-animation--hover;
+            }
+        }
+        
+        &:focus {
+            &::before {
+                @extend %bottombar-slide-animation--hover;
+            }
+        }
+    }
+}
+
+/// @name brackets-effect-animation
+/// @author Kamal Sharif
+/// @access public
+@mixin brackets-effect-animation($translate-x: 20px, $trans-duration: 0.2s, $trans-style: ease-out, $trans-delay: 0.1s) {
+    transform: translateX($translate-x);
+    transition: transform $trans-duration $trans-style $trans-delay, opacity $trans-duration $trans-style $trans-delay;
+}
+
+/// @name brackets-effect-animation-hover
+/// @author Kamal Sharif
+/// @access public
+%brackets-effect-animation-hover {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/// @name brackets-effect
+/// @author Kamal Sharif
+/// @access public
+
+@mixin brackets-effect($m: 10px, $colr: map-deep-get($colors, 'accent', 'base')) {
+    a {
+        position: relative;
+        
+        &::before {
+            display: inline-block;
+            margin-right: $m;
+            
+            color: $colr;
+            
+            content: '[';
+            opacity: 0;
+            @include brackets-effect-animation();
+        }
+        
+        &::after {
+            display: inline-block;
+            margin-left: $m;
+            
+            color: $colr;
+            
+            content: ']';
+            opacity: 0;
+           @include brackets-effect-animation(-20px);
+        }
+        
+        &:hover {
+            &::before {
+               @extend %brackets-effect-animation-hover;
+            }
+            
+            &::after {
+                @extend %brackets-effect-animation-hover; 
+            }
+        }
+        
+        &:active {
+            &::before {
+                @extend %brackets-effect-animation-hover;  
+            }
+            
+            &::after {
+                @extend %brackets-effect-animation-hover;  
+            }
+        }
+        
+        &:focus {
+            &::before {
+                @extend %brackets-effect-animation-hover;
+            }
+            
+            &::after {
+                @extend %brackets-effect-animation-hover; 
+            }
+        }
+    }
+}
+
+/// @name bottombar-effect--1-animation
+/// @author Kamal Sharif
+/// @access public
+@mixin bottomline-slide-animation($translate-y: 10px, $trans-duration: 0.2s, $trans-style: ease-out, $trans-delay: 0.1s) {
+    transform: translateY($translate-y);
+    transition: transform $trans-duration $trans-style $trans-delay, opacity $trans-duration $trans-style $trans-delay;
+}
+
+/// @name bottomline-slide-animation-hover
+/// @author Kamal Sharif
+/// @access public
+%bottomline-slide-animation-hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/// @name bottombar-effect--1
+/// @author Kamal Sharif
+/// @access public
+
+@mixin bottomline-slide($bottom-val: 10px, $left-val: 10px, $height: 2px, $width: 80%, $bg: map-deep-get($colors, 'accent', 'base')) {
+    a {
+        position: relative;
+        
+        &::after {
+            position: absolute;
+            bottom: $bottom-val;
+            left: $left-val;
+            
+            height: $height;
+            width: $width;
+            
+            background-color: $bg;
+            
+            content: '';
+            opacity: 0;
+            @include bottomline-slide-animation();
+        }
+        
+        &:hover {
+            &::after {
+                @extend %bottomline-slide-animation-hover;   
+            }
+        }
+        
+        &:active {
+            &::after {
+                @extend %bottomline-slide-animation-hover;   
+            }
+        }
+        
+        &:focus {
+            &::after {
+               @extend %bottomline-slide-animation-hover;    
+            }
+        }
+    }
+}
+
+/// @name bottombar-enlarge-animation
+/// @author Kamal Sharif
+/// @access public
+@mixin bottomline-enlarge-animation($translate-y: -10px, $trans-duration: 0.2s, $trans-style: ease-out, $trans-delay: 0.1s) {
+    transform: translateY($translate-y);
+    transition: height $trans-duration $trans-style $trans-delay, transform $trans-duration $trans-style $trans-delay, opacity $trans-duration $trans-style $trans-delay;
+}
+
+@mixin bottomline-enlarge($bottom-val: 10px, $left-val: 10px, $height: 1px, $width: 80%, $bg: map-deep-get($colors, 'accent', 'base'), $hover-height: 2px) {
+    a {
+        position: relative;
+        
+        &::after {
+            position: absolute;
+            bottom: $bottom-val;
+            left: $left-val;
+            
+            height: $height;
+            width: $width;
+            
+            background-color: $bg;
+            
+            content: '';
+            opacity: 0;
+            @include bottomline-enlarge-animation();
+        }
+        
+        &:hover {
+            &::after {
+                height: $hover-height;
+                
+                @extend %bottomline-slide-animation-hover;
+            }
+        } 
+        
+        &:active {
+            &::after {
+                height: $hover-height;
+                
+                @extend %bottomline-slide-animation-hover;  
+            }
+        } 
+        
+        &:focus {
+            &::after {
+                height: $hover-height;
+                
+                @extend %bottomline-slide-animation-hover;  
+            }
+        }
+    }
+    
+}
+
+/// @name sametext placeholder
+/// @author Kamal Sharif
+/// @access public
+%sametext-animation {
+    transform: translateY(-100%);
+}
+
+/// @name sametext
+/// @author Kamal Sharif
+/// @access public
+@mixin sametext($pad: 1.5rem) {
+    li {
+        padding: $pad;
+    }
+    
+    a {
+        // scss-lint:disable ImportantRule
+        position: relative;
+        
+        padding: 0 !important; // to override general navprime declaration
+        overflow: hidden;
+        
+        > span {
+            position: relative;
+            
+            display: inline-block;
+            
+            transition: transform 0.2s ease-out 0.1s;
+            
+            &::before {
+                position: absolute;
+                top: 100%;
+                
+                font-weight: 700;       
+                
+	            content: attr(data-hover);
+	
+                transform: translate3d(0, 0, 0);
+            }
+        }
+        
+        &:hover {
+            > span {
+                @extend %sametext-animation;
+            }
+        }
+        
+        &:active {
+            > span {
+                @extend %sametext-animation;
+            }
+        }
+        
+        &:focus {
+            > span {
+                @extend %sametext-animation;
+            }
+        }
+    }
+}
+
+/// @name topbar-slideup--pseudo-animation
+/// @author Kamal Sharif
+/// @access public
+@mixin topbar-slideup--pseudo-animation($scale-value: 0.85, $trans-duration: 0.3s, $trans-style: linear, $trans-delay: 0.1s) {
+    transform: scale($scale-value);
+    transition: transform $trans-duration $trans-style $trans-delay;
+}
+
+/// @name topbar-slideup--pseudo
+/// @author Kamal Sharif
+/// @access public
+@mixin topbar-slideup--pseudo($top-val: 90%, $left-val: 10px, $height: 2px, $width: 80%, $bg: map-deep-get($colors, 'accent', 'base')) {
+    position: absolute;
+    top: $top-val;
+    left: $left-val;
+
+    height: $height;
+    width: $width;
+
+    background-color: $bg;
+
+    content: '';
+}
+
+/// @name topbar-slideup--pseudo-hover
+/// @author Kamal Sharif
+/// @access public
+%topbar-slideup--pseudo-hover { 
+    transform: scale(1);
+}
+
+/// @name topbar-slideup--pseudo-hover-after
+/// @author Kamal Sharif
+/// @access public
+%topbar-slideup--pseudo-hover-after {
+    top: 10%;
+    opacity: 1;
+}
+
+/// @name topbar-slideup
+/// @author Kamal Sharif
+/// @access public
+@mixin topbar-slideup() {
+    a {
+        position: relative;
+        
+        text-shadow: none;
+        
+        &::before {
+            @include topbar-slideup--pseudo();
+            @include topbar-slideup--pseudo-animation();
+        }
+        
+        &::after {
+            @include topbar-slideup--pseudo();
+            @include topbar-slideup--pseudo-animation();
+            opacity: 0;
+            transition: top 0.2s ease-out 0.1s, opacity 0.2s ease-out 0.1s, transform 0.2s ease-out 0.1s;
+        }
+        
+        &:hover {
+            &::before {
+                @extend %topbar-slideup--pseudo-hover;
+            }
+            
+            &::after {
+                @extend %topbar-slideup--pseudo-hover;
+                @extend %topbar-slideup--pseudo-hover-after;
+            }
+        }
+        
+        &:active {
+            &::before {
+                @extend %topbar-slideup--pseudo-hover;
+            }
+            
+            &::after {
+                @extend %topbar-slideup--pseudo-hover;
+                @extend %topbar-slideup--pseudo-hover-after;
+            }
+        }
+        
+        &:focus {
+            &::before {
+                @extend %topbar-slideup--pseudo-hover;
+            }
+            
+            &::after {
+                @extend %topbar-slideup--pseudo-hover;
+                @extend %topbar-slideup--pseudo-hover-after;
+            }
+        }
+    }
+    
+}
+
+/// @name textfill
+/// @author Kamal Sharif
+/// @access public
+@mixin textfill($pad-li: 1.5rem, $pad-anchor: 5px, $pseudo-color: map-deep-get($colors, 'accent', 'base')) {
+    li {
+        padding: $pad-li;
+    }
+    
+    a {
+        // scss-lint:disable ImportantRule
+        position: relative;
+        
+        padding: $pad-anchor 0 !important;
+        
+        text-shadow: none;
+        
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+            max-width: 0;
+            padding: $pad-anchor 0;
+            overflow: hidden;
+            
+            color: $pseudo-color;
+            
+            border-bottom: 2px solid $pseudo-color;
+            
+            content: attr(data-hover);
+            transition: max-width 0.5s;
+        }
+        
+        &:hover {
+            &::before {
+                max-width: 100%;
+            }
+        }
+        
+        &:active {
+            &::before {
+                max-width: 100%;
+            }
+        }
+        
+        &:focus {
+            &::before {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+/// @name slide3d
+/// @author Kamal Sharif
+/// @access public
+%slide3d { 
+    transform: rotateX(10deg);
+}
+
+/// @name 3dslide
+/// @author Kamal Sharif
+/// @access public
+@mixin slide3d($perspective: 800px, $shadow-color: map-deep-get($colors, 'accent', 'base'), $pseudo-color: map-deep-get($colors, 'background', 'base'), $pseudo-bg: map-deep-get($colors, 'accent', 'base')) {
+    a { 
+        perspective: $perspective;
+        
+        > span {
+            position: relative;
+            
+            padding: 0.3rem 1.5rem 0;
+            display: inline-block;
+            
+            text-align: center;
+            //background-color: #587285;
+            box-shadow: inset 0 0.3rem $shadow-color;
+            
+            transform-origin: 0 50%;
+            transform-style: preserve-3d;
+            
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                
+                height: 100%;
+                width: 100%;
+                
+                color: $pseudo-color;
+                
+                background-color: $pseudo-bg;
+                
+                content: attr(data-hover);
+                transform-origin: 0 0;
+                transform: rotateX(270deg);
+                pointer-events: none;
+                transition: transform 0.6s;
+            }
+        }
+        
+        &:hover {
+            span {
+                &::before {
+                    @extend %slide3d;
+                }
+            }
+        }
+        
+        &:active {
+            span {
+                &::before {
+                    @extend %slide3d;
+                }
+            }
+        }
+        
+        &:focus {
+            span {
+                &::before {
+                    @extend %slide3d;
+                }
+            }
+        }
+    }
+}
+
+/// @name bottomline-slidesin
+/// @author Kamal Sharif
+/// @access public
+
+@mixin bottomline-slidesin($bottom-val: 10px, $left-val: 10px, $height: 2px, $width: 80%, $bg: map-deep-get($colors, 'accent', 'base')) {
+    a {
+        position: relative;
+        
+        &::after {
+            position: absolute;
+            bottom: $bottom-val;
+            left: $left-val;
+            
+            height: $height;
+            width: $width;
+            
+            background-color: $bg;
+            opacity: 0;
+            
+            content: '';
+            @include bottomline-slide-animation();
+        }
+        
+        &:hover {
+            &::after {
+                @extend %bottomline-slide-animation-hover;
+            }
+        }
+        
+        &:active {
+            &::after {
+                @extend %bottomline-slide-animation-hover;
+            }
+        }
+        
+        &:focus {
+            &::after {
+                @extend %bottomline-slide-animation-hover;
+            }
+        }
+    }
+}
+
+/// @name topbar-slideup--pseudo
+/// @author Kamal Sharif
+/// @access public
+@mixin slidein-both--pseudo($left-val: 10px, $height: 2px, $width: 80%, $bg: map-deep-get($colors, 'accent', 'base')) {
+    position: absolute;
+    left: $left-val;
+
+    height: $height;
+    width: $width;
+
+    background-color: $bg;
+    opacity: 0;
+
+    content: '';
+}
+
+/// @name slidein-both
+/// @author Kamal Sharif
+/// @access public
+@mixin slidein-both($top-val: 10px, $bottom-val: 10px) {
+    a {
+        position: relative;
+        
+        text-shadow: none;
+        
+        &::before {
+            @include slidein-both--pseudo();
+            top: $top-val;
+            @include bottomline-slide-animation(-10px);
+        }
+        
+        &::after {
+            @include slidein-both--pseudo();
+            bottom: $bottom-val;
+            @include bottomline-slide-animation();
+        }
+        
+        &:hover {
+            &::before {
+                @extend %bottomline-slide-animation-hover;
+            }
+            
+            &::after {
+                @extend %bottomline-slide-animation-hover;
+            }
+        }
+        
+        &:active {
+            &::before {
+                @extend %bottomline-slide-animation-hover;
+            }
+            
+            &::after {
+                @extend %bottomline-slide-animation-hover;
+            }
+        }
+        
+        &:focus {
+            &::before {
+                @extend %bottomline-slide-animation-hover;
+            }
+            
+            &::after {
+                @extend %bottomline-slide-animation-hover;
+            }
+        }
+    }
+}

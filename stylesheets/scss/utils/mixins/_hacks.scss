@@ -1,0 +1,29 @@
+/// @name Force Hardware Accelerate
+/// @author hover.css
+/// @access public
+@mixin hardware-accelerate() {
+    transform: translateZ(0);
+}
+
+/// @name Improve Aliasing
+/// @author hover.css
+/// @access public
+@mixin improve-anti-alias() {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+/// @name Font Smooth
+/// @author hover.css
+/// @access public
+@mixin make-font-smooth() {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/// @name Safari Font Smoothing
+/// @author Kamal Sharif
+/// @access public
+@mixin safari-font-smooth() {
+	-webkit-font-smoothing: subpixel-antialiased;
+}

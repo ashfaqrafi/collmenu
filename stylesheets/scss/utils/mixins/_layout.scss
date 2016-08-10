@@ -1,0 +1,20 @@
+/// @name height
+/// @author Kamal Sharif
+/// @access public
+@mixin height($height) {
+    height: $height;
+}
+
+/// @name width
+/// @author Kamal Sharif
+/// @access public
+@mixin width($width) {
+    width: $width;
+}
+
+/// @name vertical-align
+/// @author Kamal Sharif
+/// @access public
+@mixin vertical-align($prop) {
+    vertical-align: $prop;
+}

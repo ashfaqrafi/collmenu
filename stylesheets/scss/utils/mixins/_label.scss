@@ -1,0 +1,9 @@
+/// @name label-base
+/// @author Kamal Sharif
+/// @access public
+@mixin label-base() {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+
+  @include type-style();
+}

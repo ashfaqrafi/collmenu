@@ -1,0 +1,653 @@
+/// @name button-box-shadow
+/// @author Kamal Sharif
+/// @access public
+@mixin button-box-shadow($key: 'background', $value: 'base', $color-mix: 'black-mix', $amount: 92.5%) {
+    box-shadow: inset 0 5px 10px mix-bg(map-deep-get($colors, $key, $value), $color-mix, $amount);
+}
+
+/// @name button
+/// @author Kamal Sharif
+/// @access public
+@mixin button($padding-vert: 0.7em, $padding-hori: 1.5em, $line-height: 1.5) {
+    display: inline-block;
+    padding: $padding-vert $padding-hori;
+    
+    @include type-style($font-family-base, 700, 1.8rem);
+    line-height: $line-height;
+    
+    text-align: center;
+    vertical-align: middle;
+    @include ellipse();
+    
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease-in 0.1s, box-shadow 0.2s linear 0.2s;
+}
+
+/// @name button-focus
+/// @author Kamal Sharif
+/// @access public
+@mixin button-focus($bg-key: 'background', $bg-value: 'base', $bg-mix: 'black-mix', $bg-mix-amount: 95%) {
+    @include mix-bg(map-deep-get($colors, $bg-key, $bg-value), $bg-mix, $bg-mix-amount);
+    @include button-box-shadow($bg-key, $bg-value, $bg-mix, $bg-mix-amount);
+}
+
+/// @name button-variant
+/// @author Kamal Sharif
+/// @access public
+@mixin button-variant($bg: map-deep-get($colors, 'background', 'base'), $border-color: map-deep-get($colors, 'border', 'button'), $colr: map-deep-get($colors, 'background', 'base') , $border-radius: 0) {
+    color: $colr;
+    background-color: $bg;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    box-shadow: none;
+}
+
+/// @name button-default
+/// @author Kamal Sharif
+/// @access public
+@mixin button-default() {
+    @include button-variant(map-deep-get($colors, 'background', 'base'), map-deep-get($colors, 'border', 'button'), map-deep-get($colors, 'foreground', 'base'));
+        
+    &:hover {
+        @include button-focus();
+    }
+
+    &:active {
+        @include button-focus('background', 'base', 'black-mix', 90%);
+    }
+
+    &:focus {
+        @include button-focus('background', 'base', 'black-mix', 90%);    
+    }
+}
+
+/// @name button-primary
+/// @author Kamal Sharif
+/// @access public
+@mixin button-primary() {
+    @include button-variant(map-deep-get($colors, 'accent', 'base'), $border-color: map-deep-get($colors, 'accent', 'base'));
+        
+    &:hover {
+        @include button-focus('accent', 'base', 'black-mix', 95%);
+    }
+
+    &:active {
+        @include button-focus('accent', 'base', 'black-mix', 90%);
+    }
+
+    &:focus {
+        @include button-focus('accent', 'base', 'black-mix', 90%);    
+    }
+}
+
+/// @name button-save
+/// @author Kamal Sharif
+/// @access public
+@mixin button-save() {
+    @include button-variant(map-deep-get($colors, 'button', 'save'), $border-color: map-deep-get($colors, 'button', 'save'));
+        
+    &:hover {
+        @include button-focus('button', 'save', 'black-mix', 95%);
+    }
+
+    &:active {
+        @include button-focus('button', 'save', 'black-mix', 90%);
+    }
+
+    &:focus {
+        @include button-focus('button', 'save', 'black-mix', 90%);    
+    }
+}
+
+/// @name button-cancel
+/// @author Kamal Sharif
+/// @access public
+@mixin button-cancel() {
+    @include button-variant(map-deep-get($colors, 'button', 'cancel'), $border-color: map-deep-get($colors, 'button', 'cancel'));
+        
+    &:hover {
+        @include button-focus('button', 'cancel', 'black-mix', 95%);
+    }
+
+    &:active {
+        @include button-focus('button', 'cancel', 'black-mix', 90%);
+    }
+
+    &:focus {
+        @include button-focus('button', 'cancel', 'black-mix', 90%);    
+    }
+}
+
+/// @name button-delete
+/// @author Kamal Sharif
+/// @access public
+@mixin button-delete() {
+    @include button-variant(map-deep-get($colors, 'button', 'delete'), $border-color: map-deep-get($colors, 'button', 'delete'));
+        
+    &:hover {
+        @include button-focus('button', 'delete', 'black-mix', 95%);
+    }
+
+    &:active {
+        @include button-focus('button', 'delete', 'black-mix', 85%);
+    }
+
+    &:focus {
+        @include button-focus('button', 'delete', 'black-mix', 85%);    
+    }
+}
+
+/// @name button-hover-fill-focus
+/// @author Kamal Sharif
+/// @access public
+@mixin button-hover-fill-focus($colr: map-deep-get($colors, 'background', 'base'), $bg: map-deep-get($colors, 'accent', 'base')) {
+    color: $colr;
+    background-color: $bg;
+}
+
+/// @name button-hover-fill
+/// @author Kamal Sharif
+/// @access public
+@mixin button-hover-fill($bg: map-deep-get($colors, 'background', 'base'), $colr-focus: map-deep-get($colors, 'background', 'base')) {
+    background-color: $bg;
+    @include border();
+    
+    transition: color 0.3s ease-in 0.2s, background-color 0.3s ease-in 0.1s; 
+    
+    &:hover {
+        @include button-hover-fill-focus();
+    }
+            
+    &:active {
+        @include button-hover-fill-focus();
+    }
+            
+    &:focus {
+        @include button-hover-fill-focus();
+    }
+}
+
+/// @name button-hover-common-before
+/// @author Kamal Sharif
+/// @access public
+%button-hover-common-before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/// @name button-sweep-hori-animation animation
+/// @author Kamal Sharif
+/// @access public
+@mixin button-sweep-hori-animation($scale-value: 0, $trans-duration: 0.3s, $trans-style: linear, $trans-delay: 0.1s) {
+    transform: scaleX($scale-value);
+    transition: transform $trans-duration $trans-style $trans-delay;
+}
+
+/// @name button-hover-sweep-right-scale
+/// @author Kamal Sharif
+/// @access public
+%button-hover-sweep-right-scale {
+    transform: scaleX(1);
+}
+
+/// @name button-hover-sweep-right-focus
+/// @author Kamal Sharif
+/// @access public
+%button-hover-sweep-focus {
+    color: map-deep-get($colors, 'background', 'base');
+    @include border(1px, solid, map-deep-get($colors, 'accent', 'base'));
+}
+
+/// @name button-hover-sweep-hori
+/// @author Kamal Sharif
+/// @access public
+@mixin button-hover-sweep-hori($transform-x: 0, $transform-y: 50%, $bg: map-deep-get($colors, 'background', 'base'), $bg-before: map-deep-get($colors, 'accent', 'base')) {
+    position: relative;
+    
+    background-color: $bg;
+    @include border();
+
+    transform: translateZ(0);
+    transition: color 0.3s ease-in 0.2s, border 0.3s ease-in 0.3s;
+    
+    &::before {
+        @extend %button-hover-common-before;
+
+        background-color: $bg-before;
+
+        content: '';
+        transform-origin: $transform-x $transform-y;
+        @include button-sweep-hori-animation();
+    }
+    
+    &:hover {
+        @extend %button-hover-sweep-focus;
+
+        &::before {
+            @extend %button-hover-sweep-right-scale;
+        }
+    }
+
+    &:active {
+        @extend %button-hover-sweep-focus;
+
+        &::before {
+            @extend %button-hover-sweep-right-scale;
+        }
+    }
+
+    &:focus {
+        @extend %button-hover-sweep-focus;
+
+        &::before {
+            @extend %button-hover-sweep-right-scale;
+        }
+    }
+}
+
+/// @name button-swift-vert-animation
+/// @author Kamal Sharif
+/// @access public
+@mixin button-sweep-vert-animation($scale-value: 0, $trans-duration: 0.3s, $trans-style: linear, $trans-delay: 0.1s) {
+    transform: scaleY($scale-value);
+    transition: transform $trans-duration $trans-style $trans-delay;
+}
+
+/// @name button-hover-sweep-top-scale
+/// @author Kamal Sharif
+/// @access public
+%button-hover-sweep-top-scale {
+    transform: scaleY(1);
+}
+
+/// @name button-hover-sweep-vert
+/// @author Kamal Sharif
+/// @access public
+@mixin button-hover-sweep-vert($transform-x: 50%, $transform-y: 100%, $bg: map-deep-get($colors, 'background', 'base'), $bg-before: map-deep-get($colors, 'accent', 'base')) {
+    position: relative;
+    
+    background-color: $bg;
+    @include border();
+
+    transform: translateZ(0);
+    transition: color 0.3s ease-in 0.2s, border 0.3s ease-in 0.3s;
+    
+    &::before {
+        @extend %button-hover-common-before;
+
+        background-color: $bg-before;
+
+        content: '';
+        transform-origin: $transform-x $transform-y;
+        @include button-sweep-vert-animation();
+    }
+    
+    &:hover {
+        @extend %button-hover-sweep-focus;
+
+        &::before {
+            @extend %button-hover-sweep-top-scale;
+        }
+    }
+
+    &:active {
+        @extend %button-hover-sweep-focus;
+
+        &::before {
+            @extend %button-hover-sweep-top-scale;
+        }
+    }
+
+    &:focus {
+        @extend %button-hover-sweep-focus;
+
+        &::before {
+            @extend %button-hover-sweep-top-scale;
+        }
+    }
+}
+
+/// @name button-hover-radial-animation
+/// @author Kamal Sharif
+/// @access public
+@mixin button-hover-radial-animation($scale-value: 0.85, $trans-duration: 0.3s, $trans-style: linear, $trans-delay: 0.1s) {
+    transform: scale($scale-value);
+    transition: transform $trans-duration $trans-style $trans-delay;
+}
+
+
+/// @name button-hover-radial-focus
+/// @author Kamal Sharif
+/// @access public
+@mixin button-hover-radial-focus($colr: map-deep-get($colors, 'background', 'base')) {
+    color: $colr;
+    @include border(1px, solid, map-deep-get($colors, 'accent', 'base'));
+}
+
+/// @name button-hover-radial-scale
+/// @author Kamal Sharif
+/// @access public
+@mixin button-hover-radial-scale($scale-val: 0) {
+    transform: scale($scale-val);
+}
+
+
+/// @name button-hover-radial
+/// @author Kamal Sharif
+/// @access public
+@mixin button-hover-radial($scale-val: 0, $hover-scale-val: 2, $colr: map-deep-get($colors, 'foreground', 'base'), $colr-focus: map-deep-get($colors, 'background', 'base'), $border-radius: 100%, $bg: map-deep-get($colors, 'background', 'base'), $bg-before: map-deep-get($colors, 'accent', 'base')) { 
+    position: relative;
+    
+    overflow: hidden;
+    
+    color: $colr;
+    
+    background-color: $bg;
+    @include border();
+
+    transform: translateZ(0);
+    transition: color 0.3s ease-in 0.2s, border 0.3s ease-in 0.3s;
+    
+    &::before {
+        @extend %button-hover-common-before;
+        
+        background-color: $bg-before;
+        border-radius: $border-radius;
+
+        content: '';
+        @include button-hover-radial-animation($scale-val);
+    }
+    
+    &:hover {
+        @include button-hover-radial-focus($colr-focus);
+        
+        &::before {
+            @include button-hover-radial-scale($hover-scale-val);
+        }
+    }
+    
+    &:active {
+        @include button-hover-radial-focus($colr-focus);
+        
+        &::before {
+            @include button-hover-radial-scale($hover-scale-val);
+        }
+    }
+    
+    &:focus {
+        @include button-hover-radial-focus($colr-focus);
+        
+        &::before {
+            @include button-hover-radial-scale($hover-scale-val);
+        }
+    }
+}
+
+/// @name button-hover-shutter-hori-hover-scale
+/// @author Kamal Sharif
+/// @access public
+@mixin button-hover-shutter-hori-hover-scale($scale-value: 0) {
+    transform: scaleX($scale-value);
+}
+
+/// @name button-hover-shutter-hori
+/// @author Kamal Sharif
+/// @access public
+@mixin button-hover-shutter-hori($transform-value: 50%, $bg: map-deep-get($colors, 'background', 'base'), $bg-before: map-deep-get($colors, 'accent', 'base'), $scale-value: 0, $scale-hover-value: 1) {
+    position: relative;
+    
+    background-color: $bg;
+    @include border();
+
+    transform: translateZ(0);
+    transition: color 0.3s ease-in 0.2s, border 0.3s ease-in 0.3s;
+    
+    &::before {
+        @extend %button-hover-common-before;
+
+        background-color: $bg-before;
+
+        content: '';
+        
+        @include button-sweep-hori-animation($scale-value, 0.3s, ease-in);
+        transform-origin: $transform-value;
+    }
+    
+    &:hover {
+        @extend %button-hover-sweep-focus;
+
+        &::before {
+            @include button-hover-shutter-hori-hover-scale($scale-hover-value);
+        }
+    }
+
+    &:active {
+        @extend %button-hover-sweep-focus;
+
+        &::before {
+            @include button-hover-shutter-hori-hover-scale($scale-hover-value);
+        }
+    }
+
+    &:focus {
+        @extend %button-hover-sweep-focus;
+
+        &::before {
+            @include button-hover-shutter-hori-hover-scale($scale-hover-value);
+        }
+    }
+}
+
+/// @name shutter-vert-animation
+/// @author Kamal Sharif
+/// @access public
+
+@mixin shutter-vert-animation($scale-value: 0, $trans-duration: 0.3s, $trans-style: linear, $trans-delay: 0.1s) {
+    transform: scaleY($scale-value);
+    transition: transform $trans-duration $trans-style $trans-delay;
+}
+
+/// @name button-hover-shutter-vert-hover-scale
+/// @author Kamal Sharif
+/// @access public
+@mixin button-hover-shutter-vert-hover-scale($scale-value: 0) {
+    transform: scaleY($scale-value);
+}
+
+/// @name button-hover-shutter-vert
+/// @author Kamal Sharif
+/// @access public
+@mixin button-hover-shutter-vert($transform-value: 50%, $bg: map-deep-get($colors, 'background', 'base'), $bg-before: map-deep-get($colors, 'accent', 'base'), $scale-value: 0, $scale-hover-value: 1) {
+    position: relative;  
+    
+    background-color: $bg;    
+    @include border();
+
+    transform: translateZ(0);
+    transition: color 0.3s ease-in 0.2s, border 0.3s ease-in 0.3s;
+    
+    &::before {
+        @extend %button-hover-common-before;
+
+        background-color: $bg-before;
+
+        content: '';
+        
+        @include shutter-vert-animation($scale-value, 0.3s, ease-in);
+        transform-origin: $transform-value;
+    }
+    
+    &:hover {
+        @extend %button-hover-sweep-focus;
+
+        &::before {
+            @include button-hover-shutter-vert-hover-scale($scale-hover-value);
+        }
+    }
+
+    &:active {
+        @extend %button-hover-sweep-focus;
+
+        &::before {
+            @include button-hover-shutter-vert-hover-scale($scale-hover-value);
+        }
+    }
+
+    &:focus {
+        @extend %button-hover-sweep-focus;
+
+        &::before {
+            @include button-hover-shutter-vert-hover-scale($scale-hover-value);
+        }
+    }
+}
+
+/// @name button-hover-winona-animation
+/// @author Kamal Sharif
+/// @access public
+%button-hover-winona-animation {
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+/// @name button-hover-winona
+/// @author Kamal Sharif
+/// @access public
+@mixin button-hover-winona($colr: map-deep-get($colors, 'accent', 'base'), $colr-after: map-deep-get($colors, 'background', 'base'), $bg: map-deep-get($colors, 'background', 'base'), $bg-hover: map-deep-get($colors, 'accent', 'base'), $colr-border-hover: map-deep-get($colors, 'accent', 'base')) {
+    position: relative;
+    
+    height: 54px;
+    width: 120px;
+    padding: 0;
+    overflow: hidden;
+    
+    color: $colr;
+    
+    background-color: $bg;
+    @include border();
+    
+    transform: translateZ(0);
+    transition: background-color 0.3s , border 0.3s;
+    @extend %button-hover-winona-animation;
+    
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        height: 100%;
+        width: 100%;
+        padding: 0.7em 0;
+        
+        color: $colr-after;
+        
+        content: attr(data-text);
+        opacity: 0;
+        transform: translate3d(0, 25%, 0);
+        transition: transform 0.3s, opacity 0.3s;
+        @extend %button-hover-winona-animation;
+    }
+    
+    > span {
+        display: block;
+        
+        vertical-align: middle;
+        
+        transition: transform 0.3s, opacity 0.3s;
+        @extend %button-hover-winona-animation;
+    }
+    
+    &:hover {
+        background-color: $bg-hover;
+        @include border($border-color: $colr-border-hover);
+        
+        &::after {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+        
+        > span {
+            opacity: 0;
+            transform: translate3d(0, -25%, 0);
+        }
+    }
+    
+    &:active {
+        background-color: $bg-hover;
+        @include border($border-color: $colr-border-hover);
+        
+        &::after {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+        
+        > span {
+            opacity: 0;
+            transform: translate3d(0, -25%, 0);
+        }
+    }
+    
+    &:focus {
+        background-color: $bg-hover;
+        @include border($border-color: $colr-border-hover);
+        
+        &::after {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+        
+        > span {
+            opacity: 0;
+            transform: translate3d(0, -25%, 0);
+        }
+    } 
+}
+
+/// @name button-hover-wayra
+/// @author Kamal Sharif
+/// @access public
+@mixin button-hover-wayra($bg: map-deep-get($colors, 'background', 'base'), $bg-hover: map-deep-get($colors, 'accent', 'base'), $colr-hover:  map-deep-get($colors, 'background', 'base'), $colr-border-hover: map-deep-get($colors, 'accent', 'base')) {
+    overflow: hidden;
+    
+    background-color: $bg;
+    @include border();
+    
+    transform: translateZ(0);
+    transition: border-color 0.3s, color 0.3s;
+    @extend %button-hover-winona-animation;
+    
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        
+        width: 150%;
+        height: 100%;
+        
+        content: '';
+        transform-origin: 0% 100%;
+        transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+        transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+        @extend %button-hover-winona-animation;
+    }
+    
+    &:hover {
+        color: $colr-hover;
+        
+        @include border($border-color: $colr-border-hover);
+        
+        &::before {
+            background-color: $bg-hover;
+            
+            opacity: 1;
+            
+            transform: rotate3d(0, 0, 1, 0deg);
+            @extend %button-hover-winona-animation;
+        }
+    }
+}

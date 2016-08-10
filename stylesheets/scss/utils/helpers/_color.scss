@@ -1,0 +1,85 @@
+// scss-lint:disable ImportantRule
+
+.color {
+    &_white {
+        color: #fff;
+        
+        &--imp {
+            color: #fff !important;
+        }
+    }
+    
+    &_black {
+        color: #000;
+        
+        &--imp {
+            color: #000 !important;
+        }
+    }
+    
+    &_primary {
+        color: map-deep-get($colors, 'primary', 'base');
+        
+        &--imp {
+            color: map-deep-get($colors, 'primary', 'base') !important;
+        }
+    }
+    
+    &_secondary {
+        color: map-deep-get($colors, 'secondary', 'base');
+        
+        &--imp {
+            color: map-deep-get($colors, 'secondary', 'base') !important;
+        }
+    }
+        
+    &_accent {
+        color: map-deep-get($colors, 'accent', 'base');
+        
+        &--imp {
+            color: map-deep-get($colors, 'accent', 'base') !important;
+        }
+    }
+}
+
+.bg {
+    &_white {
+        background-color: #fff;
+        
+        &--imp {
+            background-color: #fff !important;
+        }
+    }
+    
+    &_black {
+        background-color: #000;
+        
+        &--imp {
+            background-color: #000 !important;
+        }
+    }
+    
+    &_primary {
+        background-color: map-deep-get($colors, 'primary', 'base');
+        
+        &--imp {
+            background-color: map-deep-get($colors, 'primary', 'base') !important;
+        }
+    }
+    
+    &_secondary {
+        background-color: map-deep-get($colors, 'secondary', 'base');
+        
+        &--imp {
+            background-color: map-deep-get($colors, 'secondary', 'base') !important;
+        }
+    }
+        
+    &_accent {
+        background-color: map-deep-get($colors, 'accent', 'base');
+        
+        &--imp {
+            background-color: map-deep-get($colors, 'accent', 'base') !important;
+        }
+    }
+}

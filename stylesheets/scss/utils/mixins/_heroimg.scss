@@ -1,0 +1,15 @@
+/// @name hero background image
+/// @author Kamal Sharif
+/// @access public
+
+@mixin heroimg($url) {
+	position: relative;
+
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+
+	background: map-deep-get($colors, 'background', 'dark')  url($url) no-repeat center center; // [1]
+	background-size: cover;
+	background-attachment: fixed;
+}

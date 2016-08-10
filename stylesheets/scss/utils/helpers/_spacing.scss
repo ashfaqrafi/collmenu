@@ -1,0 +1,2385 @@
+// scss-lint:disable NestingDepth, ImportantRule
+
+.mrgn {
+	&_all {
+		&--0 {
+			@include margin(0);
+			
+			&-imp {
+				@include margin(0 !important);
+			}
+		}
+		
+		&--5 {
+			@include margin($margin-5);
+			
+			&-imp {
+				@include margin($margin-5 !important);
+			}
+		}
+		
+		&--10 {
+			@include margin($margin-10);
+			
+			&-imp {
+				@include margin($margin-10 !important);
+			}
+		}
+		
+		&--15 {
+			@include margin($margin-15);
+			
+			&-imp {
+				@include margin($margin-15 !important);
+			}
+		}
+		
+		&--20 {
+			@include margin($margin-20);
+			
+			&-imp {
+				@include margin($margin-20 !important);
+			}
+		}
+		
+		&--25 {
+			@include margin($margin-25);
+			
+			&-imp {
+				@include margin($margin-25 !important);
+			}
+		}
+		
+		&--30 {
+			@include margin($margin-30);
+			
+			&-imp {
+				@include margin($margin-30 !important);
+			}
+		}
+		
+		&--35 {
+			@include margin($margin-35);
+			
+			&-imp {
+				@include margin($margin-35 !important);
+			}
+		}
+		
+		&--40 {
+			@include margin($margin-40);
+			
+			&-imp {
+				@include margin($margin-40 !important);
+            }
+		}
+		
+		&--45 {
+			@include margin($margin-45);
+			
+			&-imp {
+				@include margin($margin-45 !important);
+			}
+		}
+		
+		&--50 {
+			@include margin($margin-50);
+			
+			&-imp {
+				@include margin($margin-50 !important);
+			}
+		}
+		
+		&--55 {
+			@include margin($margin-55);
+			
+			&-imp {
+				@include margin($margin-55 !important);
+			}
+		}
+		
+		&--60 {
+			@include margin($margin-60);
+			
+			&-imp {
+				@include margin($margin-60 !important);
+			}
+		}
+		
+		&--65 {
+			@include margin($margin-65);
+			
+			&-imp {
+				@include margin($margin-65 !important);
+			}
+		}
+		
+		&--70 {
+			@include margin($margin-70);
+			
+			&-imp {
+				@include margin($margin-70 !important);
+			}
+		}
+		
+		&--75 {
+			@include margin($margin-75);
+			
+			&-imp {
+				@include margin($margin-75 !important);
+			}
+		}
+		
+		&--80 {
+			@include margin($margin-80);
+			
+			&-imp {
+				@include margin($margin-80 !important);
+			}
+		}
+		
+		&--85 {
+			@include margin($margin-85);
+			
+			&-imp {
+				@include margin($margin-85 !important);
+			}
+		}
+		
+		&--90 {
+			@include margin($margin-90);
+			
+			&-imp {
+				@include margin($margin-90 !important);
+			}
+		}	
+		
+		&--95 {
+			@include margin($margin-95);
+			
+			&-imp {
+				@include margin($margin-95 !important);
+			}
+		}
+		
+		&--100 {
+			@include margin($margin-100);
+			
+			&-imp {
+				@include margin($margin-100 !important);
+			}
+		}		
+	}
+	
+	&_vert {
+		&--0 {
+			@include margin-vertical(0, 0);
+			
+			&-imp {
+				@include margin-vertical(0 !important, 0 !important);
+			}
+		}
+		
+		&--5 {
+			@include margin-vertical($margin-5, $margin-5);
+			
+			&-imp {
+				@include margin-vertical($margin-5 !important, $margin-5 !important);
+			}
+		}
+		
+		&--10 {
+			@include margin-vertical($margin-10, $margin-10);
+			
+			&-imp {
+				@include margin-vertical($margin-10 !important, $margin-10 !important);
+			}
+		}
+		
+		&--15 {
+			@include margin-vertical($margin-15, $margin-15);
+			
+			&-imp {
+				@include margin-vertical($margin-15 !important, $margin-15 !important);
+			}
+		}
+		
+		&--20 {
+			@include margin-vertical($margin-20, $margin-20);
+			
+			&-imp {
+				@include margin-vertical($margin-20 !important, $margin-20 !important);
+			}
+		}
+		
+		&--25 {
+			@include margin-vertical($margin-25, $margin-25);
+			
+			&-imp {
+				@include margin-vertical($margin-25 !important, $margin-25 !important);
+			}
+		}
+		
+		&--30 {
+			@include margin-vertical($margin-30, $margin-30);
+			
+			&-imp {
+				@include margin-vertical($margin-30 !important, $margin-30 !important);
+			}
+		}
+		
+		&--35 {
+			@include margin-vertical($margin-35, $margin-35);
+			
+			&-imp {
+				@include margin-vertical($margin-35 !important, $margin-35 !important);
+			}
+		}
+		
+		&--40 {
+			@include margin-vertical($margin-40, $margin-40);
+			
+			&-imp {
+				@include margin-vertical($margin-40 !important, $margin-40 !important);
+			}
+		}
+		
+		&--45 {
+			@include margin-vertical($margin-45, $margin-45);
+			
+			&-imp {
+				@include margin-vertical($margin-45 !important, $margin-45 !important);
+			}
+		}
+		
+		&--50 {
+			@include margin-vertical($margin-50, $margin-50);
+			
+			&-imp {
+				@include margin-vertical($margin-50 !important, $margin-50 !important);
+			}
+		}
+		
+		&--55 {
+			@include margin-vertical($margin-55, $margin-55);
+			
+			&-imp {
+				@include margin-vertical($margin-55 !important, $margin-55 !important);
+			}
+		}
+		
+		&--60 {
+			@include margin-vertical($margin-60, $margin-60);
+			
+			&-imp {
+				@include margin-vertical($margin-60 !important, $margin-60 !important);
+			}
+		}
+		
+		&--65 {
+			@include margin-vertical($margin-65, $margin-65);
+			
+			&-imp {
+				@include margin-vertical($margin-65 !important, $margin-65 !important);
+			}
+		}
+		
+		&--70 {
+			@include margin-vertical($margin-70, $margin-70);
+			
+			&-imp {
+				@include margin-vertical($margin-70 !important, $margin-70 !important);
+			}
+		}
+		
+		&--75 {
+			@include margin-vertical($margin-75, $margin-75);
+			
+			&-imp {
+				@include margin-vertical($margin-75 !important, $margin-75 !important);
+			}
+		}
+		
+		&--80 {
+			@include margin-vertical($margin-80, $margin-80);
+			
+			&-imp {
+				@include margin-vertical($margin-80 !important, $margin-80 !important);
+			}
+		}
+		
+		&--85 {
+			@include margin-vertical($margin-85, $margin-85);
+			
+			&-imp {
+				@include margin-vertical($margin-85 !important, $margin-85 !important);
+			}
+		}
+		
+		&--90 {
+			@include margin-vertical($margin-90, $margin-90);
+			
+			&-imp {
+				@include margin-vertical($margin-90 !important, $margin-90 !important);
+			}
+		}
+		
+		&--95 {
+			@include margin-vertical($margin-95, $margin-95);
+			
+			&-imp {
+				@include margin-vertical($margin-95 !important, $margin-95 !important);
+			}
+		}
+		
+		&--100 {
+			@include margin-vertical($margin-100, $margin-100);
+			
+			&-imp {
+				@include margin-vertical($margin-100 !important, $margin-100 !important);
+			}
+		}
+	}
+	
+	&_hori {
+		&--0 {
+			@include margin-horizontal(0, 0);
+			
+			&-imp {
+				@include margin-horizontal(0 !important, 0 !important);
+			}
+		}
+		
+		&--5 {
+			@include margin-horizontal($margin-5, $margin-5);
+			
+			&-imp {
+				@include margin-horizontal($margin-5 !important, $margin-5 !important);
+			}
+		}
+		
+		&--10 {
+			@include margin-horizontal($margin-10, $margin-10);
+			
+			&-imp {
+				@include margin-horizontal($margin-10 !important, $margin-10 !important);
+			}
+		}
+		
+		&--15 {
+			@include margin-horizontal($margin-15, $margin-15);
+			
+			&-imp {
+				@include margin-horizontal($margin-15 !important, $margin-15 !important);
+			}
+		}
+		
+		&--20 {
+			@include margin-horizontal($margin-20, $margin-20);
+			
+			&-imp {
+				@include margin-horizontal($margin-20 !important, $margin-20 !important);
+			}
+		}
+		
+		&--25 {
+			@include margin-horizontal($margin-25, $margin-25);
+			
+			&-imp {
+				@include margin-horizontal($margin-25 !important, $margin-25 !important);
+			}
+		}
+		
+		&--30 {
+			@include margin-horizontal($margin-30, $margin-30);
+			
+			&-imp {
+				@include margin-horizontal($margin-30 !important, $margin-30 !important);
+			}
+		}
+		
+		&--35 {
+			@include margin-horizontal($margin-35, $margin-35);
+			
+			&-imp {
+				@include margin-horizontal($margin-35 !important, $margin-35 !important);
+			}
+		}
+		
+		&--40 {
+			@include margin-horizontal($margin-40, $margin-40);
+			
+			&-imp {
+				@include margin-horizontal($margin-40 !important, $margin-40 !important);
+			}
+		}
+		
+		&--45 {
+			@include margin-horizontal($margin-45, $margin-45);
+			
+			&-imp {
+				@include margin-horizontal($margin-45 !important, $margin-45 !important);
+			}
+		}
+		
+		&--50 {
+			@include margin-horizontal($margin-50, $margin-50);
+			
+			&-imp {
+				@include margin-horizontal($margin-50 !important, $margin-50 !important);
+			}
+		}
+		
+		&--55 {
+			@include margin-horizontal($margin-55, $margin-55);
+			
+			&-imp {
+				@include margin-horizontal($margin-55 !important, $margin-55 !important);
+			}
+		}
+		
+		&--60 {
+			@include margin-horizontal($margin-60, $margin-60);
+			
+			&-imp {
+				@include margin-horizontal($margin-60 !important, $margin-60 !important);
+			}
+		}
+		
+		&--65 {
+			@include margin-horizontal($margin-65, $margin-65);
+			
+			&-imp {
+				@include margin-horizontal($margin-65 !important, $margin-65 !important);
+			}
+		}
+		
+		&--70 {
+			@include margin-horizontal($margin-70, $margin-70);
+			
+			&-imp {
+				@include margin-horizontal($margin-70 !important, $margin-70 !important);
+			}
+		}
+		
+		&--75 {
+			@include margin-horizontal($margin-75, $margin-75);
+			
+			&-imp {
+				@include margin-horizontal($margin-75 !important, $margin-75 !important);
+			}
+		}
+		
+		&--80 {
+			@include margin-horizontal($margin-80, $margin-80);
+			
+			&-imp {
+				@include margin-horizontal($margin-80 !important, $margin-80 !important);
+			}
+		}
+		
+		&--85 {
+			@include margin-horizontal($margin-85, $margin-85);
+			
+			&-imp {
+				@include margin-horizontal($margin-85 !important, $margin-85 !important);
+			}
+		}
+		
+		&--90 {
+			@include margin-horizontal($margin-90, $margin-90);
+			
+			&-imp {
+				@include margin-horizontal($margin-90 !important, $margin-90 !important);
+			}
+		}
+		
+		&--95 {
+			@include margin-horizontal($margin-95, $margin-95);
+			
+			&-imp {
+				@include margin-horizontal($margin-95 !important, $margin-95 !important);
+			}
+		}
+		
+		&--100 {
+			@include margin-horizontal($margin-100, $margin-100);
+			
+			&-imp {
+				@include margin-horizontal($margin-100 !important, $margin-100 !important);
+			}
+		}
+	}
+	
+	&_top {
+		&--0 {
+			@include margin-top(0);
+			
+			&-imp {
+				@include margin-top(0 !important);
+			}
+		}
+		
+		&--5 {
+			@include margin-top($margin-5);
+			
+			&-imp {
+				@include margin-top($margin-5 !important);
+			}
+		}
+		
+		&--10 {
+			@include margin-top($margin-10);
+			
+			&-imp {
+				@include margin-top($margin-10 !important);
+			}
+		}
+		
+		&--15 {
+			@include margin-top($margin-15);
+			
+			&-imp {
+				@include margin-top($margin-15 !important);
+			}
+		}
+		
+		&--20 {
+			@include margin-top($margin-20);
+			
+			&-imp {
+				@include margin-top($margin-20 !important);
+			}
+		}
+		
+		&--25 {
+			@include margin-top($margin-25);
+			
+			&-imp {
+				@include margin-top($margin-25 !important);
+			}
+		}
+		
+		&--30 {
+			@include margin-top($margin-30);
+			
+			&-imp {
+				@include margin-top($margin-30 !important);
+			}
+		}
+		
+		&--35 {
+			@include margin-top($margin-35);
+			
+			&-imp {
+				@include margin-top($margin-35 !important);
+			}
+		}
+		
+		&--40 {
+			@include margin-top($margin-40);
+			
+			&-imp {
+				@include margin-top($margin-40 !important);
+			}
+		}
+		
+		&--45 {
+			@include margin-top($margin-45);
+			
+			&-imp {
+				@include margin-top($margin-45 !important);
+			}
+		}
+		
+		&--50 {
+			@include margin-top($margin-50);
+			
+			&-imp {
+				@include margin-top($margin-50 !important);
+			}
+		}
+		
+		&--55 {
+			@include margin-top($margin-55);
+			
+			&-imp {
+				@include margin-top($margin-55 !important);
+			}
+		}
+		
+		&--60 {
+			@include margin-top($margin-60);
+			
+			&-imp {
+				@include margin-top($margin-60 !important);
+			}
+		}
+		
+		&--65 {
+			@include margin-top($margin-65);
+			
+			&-imp {
+				@include margin-top($margin-65 !important);
+			}
+		}
+		
+		&--70 {
+			@include margin-top($margin-70);
+			
+			&-imp {
+				@include margin-top($margin-70 !important);
+			}
+		}
+		
+		&--75 {
+			@include margin-top($margin-75);
+			
+			&-imp {
+				@include margin-top($margin-75 !important);
+			}
+		}
+		
+		&--80 {
+			@include margin-top($margin-80);
+			
+			&-imp {
+				@include margin-top($margin-80 !important);
+			}
+		}
+		
+		&--85 {
+			@include margin-top($margin-85);
+			
+			&-imp {
+				@include margin-top($margin-85 !important);
+			}
+		}
+		
+		&--90 {
+			@include margin-top($margin-90);
+			
+			&-imp {
+				@include margin-top($margin-90 !important);
+			}
+		}	
+		
+		&--95 {
+			@include margin-top($margin-95);
+			
+			&-imp {
+				@include margin-top($margin-95 !important);
+			}
+		}
+		
+		&--100 {
+			@include margin-top($margin-100);
+			
+			&-imp {
+				@include margin-top($margin-100 !important);
+			}
+		}		
+	}
+	
+	&_right {
+		&--0 {
+			@include margin-right(0);
+			
+			&-imp {
+				@include margin-right(0 !important);
+			}
+		}
+		
+		&--5 {
+			@include margin-right($margin-5);
+			
+			&-imp {
+				@include margin-right($margin-5 !important);
+			}
+		}
+		
+		&--10 {
+			@include margin-right($margin-10);
+			
+			&-imp {
+				@include margin-right($margin-10 !important);
+			}
+		}
+		
+		&--15 {
+			@include margin-right($margin-15);
+			
+			&-imp {
+				@include margin-right($margin-15 !important);
+			}
+		}
+		
+		&--20 {
+			@include margin-right($margin-20);
+			
+			&-imp {
+				@include margin-right($margin-20 !important);
+			}
+		}
+		
+		&--25 {
+			@include margin-right($margin-25);
+			
+			&-imp {
+				@include margin-right($margin-25 !important);
+			}
+		}
+		
+		&--30 {
+			@include margin-right($margin-30);
+			
+			&-imp {
+				@include margin-right($margin-30 !important);
+			}
+		}
+		
+		&--35 {
+			@include margin-right($margin-35);
+			
+			&-imp {
+				@include margin-right($margin-35 !important);
+			}
+		}
+		
+		&--40 {
+			@include margin-right($margin-40);
+			
+			&-imp {
+				@include margin-right($margin-40 !important);
+			}
+		}
+		
+		&--45 {
+			@include margin-right($margin-45);
+			
+			&-imp {
+				@include margin-right($margin-45 !important);
+			}
+		}
+		
+		&--50 {
+			@include margin-right($margin-50);
+			
+			&-imp {
+				@include margin-right($margin-50 !important);
+			}
+		}
+		
+		&--55 {
+			@include margin-right($margin-55);
+			
+			&-imp {
+				@include margin-right($margin-55 !important);
+			}
+		}
+		
+		&--60 {
+			@include margin-right($margin-60);
+			
+			&-imp {
+				@include margin-right($margin-60 !important);
+			}
+		}
+		
+		&--65 {
+			@include margin-right($margin-65);
+			
+			&-imp {
+				@include margin-right($margin-65 !important);
+			}
+		}
+		
+		&--70 {
+			@include margin-right($margin-70);
+			
+			&-imp {
+				@include margin-right($margin-70 !important);
+			}
+		}
+		
+		&--75 {
+			@include margin-right($margin-75);
+			
+			&-imp {
+				@include margin-right($margin-75 !important);
+			}
+		}
+		
+		&--80 {
+			@include margin-right($margin-80);
+			
+			&-imp {
+				@include margin-right($margin-80 !important);
+			}
+		}
+		
+		&--85 {
+			@include margin-right($margin-85);
+			
+			&-imp {
+				@include margin-right($margin-85 !important);
+			}
+		}
+		
+		&--90 {
+			@include margin-right($margin-90);
+			
+			&-imp {
+				@include margin-right($margin-90 !important);
+			}
+		}	
+		
+		&--95 {
+			@include margin-right($margin-95);
+			
+			&-imp {
+				@include margin-right($margin-95 !important);
+			}
+		}
+		
+		&--100 {
+			@include margin-right($margin-100);
+			
+			&-imp {
+				@include margin-right($margin-100 !important);
+			}
+		}		
+	}
+	
+	&_bottom {
+		&--0 {
+			@include margin-bottom(0);
+			
+			&-imp {
+				@include margin-bottom(0 !important);
+			}
+		}
+		
+		&--5 {
+			@include margin-bottom($margin-5);
+			
+			&-imp {
+				@include margin-bottom($margin-5 !important);
+			}
+		}
+		
+		&--10 {
+			@include margin-bottom($margin-10);
+			
+			&-imp {
+				@include margin-bottom($margin-10 !important);
+			}
+		}
+		
+		&--15 {
+			@include margin-bottom($margin-15);
+			
+			&-imp {
+				@include margin-bottom($margin-15 !important);
+			}
+		}
+		
+		&--20 {
+			@include margin-bottom($margin-20);
+			
+			&-imp {
+				@include margin-bottom($margin-20 !important);
+			}
+		}
+		
+		&--25 {
+			@include margin-bottom($margin-25);
+			
+			&-imp {
+				@include margin-bottom($margin-25 !important);
+			}
+		}
+		
+		&--30 {
+			@include margin-bottom($margin-30);
+			
+			&-imp {
+				@include margin-bottom($margin-30 !important);
+			}
+		}
+		
+		&--35 {
+			@include margin-bottom($margin-35);
+			
+			&-imp {
+				@include margin-bottom($margin-35 !important);
+			}
+		}
+		
+		&--40 {
+			@include margin-bottom($margin-40);
+			
+			&-imp {
+				@include margin-bottom($margin-40 !important);
+			}
+		}
+		
+		&--45 {
+			@include margin-bottom($margin-45);
+			
+			&-imp {
+				@include margin-bottom($margin-45 !important);
+			}
+		}
+		
+		&--50 {
+			@include margin-bottom($margin-50);
+			
+			&-imp {
+				@include margin-bottom($margin-50 !important);
+			}
+		}
+		
+		&--55 {
+			@include margin-bottom($margin-55);
+			
+			&-imp {
+				@include margin-bottom($margin-55 !important);
+			}
+		}
+		
+		&--60 {
+			@include margin-bottom($margin-60);
+			
+			&-imp {
+				@include margin-bottom($margin-60 !important);
+			}
+		}
+		
+		&--65 {
+			@include margin-bottom($margin-65);
+			
+			&-imp {
+				@include margin-bottom($margin-65 !important);
+			}
+		}
+		
+		&--70 {
+			@include margin-bottom($margin-70);
+			
+			&-imp {
+				@include margin-bottom($margin-70 !important);
+			}
+		}
+		
+		&--75 {
+			@include margin-bottom($margin-75);
+			
+			&-imp {
+				@include margin-bottom($margin-75 !important);
+			}
+		}
+		
+		&--80 {
+			@include margin-bottom($margin-80);
+			
+			&-imp {
+				@include margin-bottom($margin-80 !important);
+			}
+		}
+		
+		&--85 {
+			@include margin-bottom($margin-85);
+			
+			&-imp {
+				@include margin-bottom($margin-85 !important);
+			}
+		}
+		
+		&--90 {
+			@include margin-bottom($margin-90);
+			
+			&-imp {
+				@include margin-bottom($margin-90 !important);
+			}
+		}	
+		
+		&--95 {
+			@include margin-bottom($margin-95);
+			
+			&-imp {
+				@include margin-bottom($margin-95 !important);
+			}
+		}
+		
+		&--100 {
+			@include margin-bottom($margin-100);
+			
+			&-imp {
+				@include margin-bottom($margin-100 !important);
+			}
+		}		
+	}
+	
+	&_left {
+		&--0 {
+			@include margin-left(0);
+			
+			&-imp {
+				@include margin-left(0 !important);
+			}
+		}
+		
+		&--5 {
+			@include margin-left($margin-5);
+			
+			&-imp {
+				@include margin-left($margin-5 !important);
+			}
+		}
+		
+		&--10 {
+			@include margin-left($margin-10);
+			
+			&-imp {
+				@include margin-left($margin-10 !important);
+			}
+		}
+		
+		&--15 {
+			@include margin-left($margin-15);
+			
+			&-imp {
+				@include margin-left($margin-15 !important);
+			}
+		}
+		
+		&--20 {
+			@include margin-left($margin-20);
+			
+			&-imp {
+				@include margin-left($margin-20 !important);
+			}
+		}
+		
+		&--25 {
+			@include margin-left($margin-25);
+			
+			&-imp {
+				@include margin-left($margin-25 !important);
+			}
+		}
+		
+		&--30 {
+			@include margin-left($margin-30);
+			
+			&-imp {
+				@include margin-left($margin-30 !important);
+			}
+		}
+		
+		&--35 {
+			@include margin-left($margin-35);
+			
+			&-imp {
+				@include margin-left($margin-35 !important);
+			}
+		}
+		
+		&--40 {
+			@include margin-left($margin-40);
+			
+			&-imp {
+				@include margin-left($margin-40 !important);
+			}
+		}
+		
+		&--45 {
+			@include margin-left($margin-45);
+			
+			&-imp {
+				@include margin-left($margin-45 !important);
+			}
+		}
+		
+		&--50 {
+			@include margin-left($margin-50);
+			
+			&-imp {
+				@include margin-left($margin-50 !important);
+			}
+		}
+		
+		&--55 {
+			@include margin-left($margin-55);
+			
+			&-imp {
+				@include margin-left($margin-55 !important);
+			}
+		}
+		
+		&--60 {
+			@include margin-left($margin-60);
+			
+			&-imp {
+				@include margin-left($margin-60 !important);
+			}
+		}
+		
+		&--65 {
+			@include margin-left($margin-65);
+			
+			&-imp {
+				@include margin-left($margin-65 !important);
+			}
+		}
+		
+		&--70 {
+			@include margin-left($margin-70);
+			
+			&-imp {
+				@include margin-left($margin-70 !important);
+			}
+		}
+		
+		&--75 {
+			@include margin-left($margin-75);
+			
+			&-imp {
+				@include margin-left($margin-75 !important);
+			}
+		}
+		
+		&--80 {
+			@include margin-left($margin-80);
+			
+			&-imp {
+				@include margin-left($margin-80 !important);
+			}
+		}
+		
+		&--85 {
+			@include margin-left($margin-85);
+			
+			&-imp {
+				@include margin-left($margin-85 !important);
+			}
+		}
+		
+		&--90 {
+			@include margin-left($margin-90);
+			
+			&-imp {
+				@include margin-left($margin-90 !important);
+			}
+		}	
+		
+		&--95 {
+			@include margin-left($margin-95);
+			
+			&-imp {
+				@include margin-left($margin-95 !important);
+			}
+		}
+		
+		&--100 {
+			@include margin-left($margin-100);
+			
+			&-imp {
+				@include margin-left($margin-100 !important);
+			}
+		}		
+	}
+}
+
+.pad {
+	&_all {
+		&--0 {
+			@include padding(0);
+			
+			&-imp {
+				@include padding(0 !important);
+			}
+		}
+		
+		&--5 {
+			@include padding($padding-5);
+			
+			&-imp {
+				@include padding($padding-5 !important);
+			}
+		}
+		
+		&--10 {
+			@include padding($padding-10);
+			
+			&-imp {
+				@include padding($padding-10 !important);
+			}
+		}
+		
+		&--15 {
+			@include padding($padding-15);
+			
+			&-imp {
+				@include padding($padding-15 !important);
+			}
+		}
+		
+		&--20 {
+			@include padding($padding-20);
+			
+			&-imp {
+				@include padding($padding-20 !important);
+			}
+		}
+		
+		&--25 {
+			@include padding($padding-25);
+			
+			&-imp {
+				@include padding($padding-25 !important);
+			}
+		}
+		
+		&--30 {
+			@include padding($padding-30);
+			
+			&-imp {
+				@include padding($padding-30 !important);
+			}
+		}
+		
+		&--35 {
+			@include padding($padding-35);
+			
+			&-imp {
+				@include padding($padding-35 !important);
+			}
+		}
+		
+		&--40 {
+			@include padding($padding-40);
+			
+			&-imp {
+				@include padding($padding-40 !important);
+            }
+		}
+		
+		&--45 {
+			@include padding($padding-45);
+			
+			&-imp {
+				@include padding($padding-45 !important);
+			}
+		}
+		
+		&--50 {
+			@include padding($padding-50);
+			
+			&-imp {
+				@include padding($padding-50 !important);
+			}
+		}
+		
+		&--55 {
+			@include padding($padding-55);
+			
+			&-imp {
+				@include padding($padding-55 !important);
+			}
+		}
+		
+		&--60 {
+			@include padding($padding-60);
+			
+			&-imp {
+				@include padding($padding-60 !important);
+			}
+		}
+		
+		&--65 {
+			@include padding($padding-65);
+			
+			&-imp {
+				@include padding($padding-65 !important);
+			}
+		}
+		
+		&--70 {
+			@include padding($padding-70);
+			
+			&-imp {
+				@include padding($padding-70 !important);
+			}
+		}
+		
+		&--75 {
+			@include padding($padding-75);
+			
+			&-imp {
+				@include padding($padding-75 !important);
+			}
+		}
+		
+		&--80 {
+			@include padding($padding-80);
+			
+			&-imp {
+				@include padding($padding-80 !important);
+			}
+		}
+		
+		&--85 {
+			@include padding($padding-85);
+			
+			&-imp {
+				@include padding($padding-85 !important);
+			}
+		}
+		
+		&--90 {
+			@include padding($padding-90);
+			
+			&-imp {
+				@include padding($padding-90 !important);
+			}
+		}	
+		
+		&--95 {
+			@include padding($padding-95);
+			
+			&-imp {
+				@include padding($padding-95 !important);
+			}
+		}
+		
+		&--100 {
+			@include padding($padding-100);
+			
+			&-imp {
+				@include padding($padding-100 !important);
+			}
+		}		
+	}
+	
+	&_vert {
+		&--0 {
+			@include padding-vertical(0, 0);
+			
+			&-imp {
+				@include padding-vertical(0 !important, 0 !important);
+			}
+		}
+		
+		&--5 {
+			@include padding-vertical($padding-5, $padding-5);
+			
+			&-imp {
+				@include padding-vertical($padding-5 !important, $padding-5 !important);
+			}
+		}
+		
+		&--10 {
+			@include padding-vertical($padding-10, $padding-10);
+			
+			&-imp {
+				@include padding-vertical($padding-10 !important, $padding-10 !important);
+			}
+		}
+		
+		&--15 {
+			@include padding-vertical($padding-15, $padding-15);
+			
+			&-imp {
+				@include padding-vertical($padding-15 !important, $padding-15 !important);
+			}
+		}
+		
+		&--20 {
+			@include padding-vertical($padding-20, $padding-20);
+			
+			&-imp {
+				@include padding-vertical($padding-20 !important, $padding-20 !important);
+			}
+		}
+		
+		&--25 {
+			@include padding-vertical($padding-25, $padding-25);
+			
+			&-imp {
+				@include padding-vertical($padding-25 !important, $padding-25 !important);
+			}
+		}
+		
+		&--30 {
+			@include padding-vertical($padding-30, $padding-30);
+			
+			&-imp {
+				@include padding-vertical($padding-30 !important, $padding-30 !important);
+			}
+		}
+		
+		&--35 {
+			@include padding-vertical($padding-35, $padding-35);
+			
+			&-imp {
+				@include padding-vertical($padding-35 !important, $padding-35 !important);
+			}
+		}
+		
+		&--40 {
+			@include padding-vertical($padding-40, $padding-40);
+			
+			&-imp {
+				@include padding-vertical($padding-40 !important, $padding-40 !important);
+			}
+		}
+		
+		&--45 {
+			@include padding-vertical($padding-45, $padding-45);
+			
+			&-imp {
+				@include padding-vertical($padding-45 !important, $padding-45 !important);
+			}
+		}
+		
+		&--50 {
+			@include padding-vertical($padding-50, $padding-50);
+			
+			&-imp {
+				@include padding-vertical($padding-50 !important, $padding-50 !important);
+			}
+		}
+		
+		&--55 {
+			@include padding-vertical($padding-55, $padding-55);
+			
+			&-imp {
+				@include padding-vertical($padding-55 !important, $padding-55 !important);
+			}
+		}
+		
+		&--60 {
+			@include padding-vertical($padding-60, $padding-60);
+			
+			&-imp {
+				@include padding-vertical($padding-60 !important, $padding-60 !important);
+			}
+		}
+		
+		&--65 {
+			@include padding-vertical($padding-65, $padding-65);
+			
+			&-imp {
+				@include padding-vertical($padding-65 !important, $padding-65 !important);
+			}
+		}
+		
+		&--70 {
+			@include padding-vertical($padding-70, $padding-70);
+			
+			&-imp {
+				@include padding-vertical($padding-70 !important, $padding-70 !important);
+			}
+		}
+		
+		&--75 {
+			@include padding-vertical($padding-75, $padding-75);
+			
+			&-imp {
+				@include padding-vertical($padding-75 !important, $padding-75 !important);
+			}
+		}
+		
+		&--80 {
+			@include padding-vertical($padding-80, $padding-80);
+			
+			&-imp {
+				@include padding-vertical($padding-80 !important, $padding-80 !important);
+			}
+		}
+		
+		&--85 {
+			@include padding-vertical($padding-85, $padding-85);
+			
+			&-imp {
+				@include padding-vertical($padding-85 !important, $padding-85 !important);
+			}
+		}
+		
+		&--90 {
+			@include padding-vertical($padding-90, $padding-90);
+			
+			&-imp {
+				@include padding-vertical($padding-90 !important, $padding-90 !important);
+			}
+		}
+		
+		&--95 {
+			@include padding-vertical($padding-95, $padding-95);
+			
+			&-imp {
+				@include padding-vertical($padding-95 !important, $padding-95 !important);
+			}
+		}
+		
+		&--100 {
+			@include padding-vertical($padding-100, $padding-100);
+			
+			&-imp {
+				@include padding-vertical($padding-100 !important, $padding-100 !important);
+			}
+		}
+	}
+	
+	&_hori {
+		&--0 {
+			@include padding-horizontal(0, 0);
+			
+			&-imp {
+				@include padding-horizontal(0 !important, 0 !important);
+			}
+		}
+		
+		&--5 {
+			@include padding-horizontal($padding-5, $padding-5);
+			
+			&-imp {
+				@include padding-horizontal($padding-5 !important, $padding-5 !important);
+			}
+		}
+		
+		&--10 {
+			@include padding-horizontal($padding-10, $padding-10);
+			
+			&-imp {
+				@include padding-horizontal($padding-10 !important, $padding-10 !important);
+			}
+		}
+		
+		&--15 {
+			@include padding-horizontal($padding-15, $padding-15);
+			
+			&-imp {
+				@include padding-horizontal($padding-15 !important, $padding-15 !important);
+			}
+		}
+		
+		&--20 {
+			@include padding-horizontal($padding-20, $padding-20);
+			
+			&-imp {
+				@include padding-horizontal($padding-20 !important, $padding-20 !important);
+			}
+		}
+		
+		&--25 {
+			@include padding-horizontal($padding-25, $padding-25);
+			
+			&-imp {
+				@include padding-horizontal($padding-25 !important, $padding-25 !important);
+			}
+		}
+		
+		&--30 {
+			@include padding-horizontal($padding-30, $padding-30);
+			
+			&-imp {
+				@include padding-horizontal($padding-30 !important, $padding-30 !important);
+			}
+		}
+		
+		&--35 {
+			@include padding-horizontal($padding-35, $padding-35);
+			
+			&-imp {
+				@include padding-horizontal($padding-35 !important, $padding-35 !important);
+			}
+		}
+		
+		&--40 {
+			@include padding-horizontal($padding-40, $padding-40);
+			
+			&-imp {
+				@include padding-horizontal($padding-40 !important, $padding-40 !important);
+			}
+		}
+		
+		&--45 {
+			@include padding-horizontal($padding-45, $padding-45);
+			
+			&-imp {
+				@include padding-horizontal($padding-45 !important, $padding-45 !important);
+			}
+		}
+		
+		&--50 {
+			@include padding-horizontal($padding-50, $padding-50);
+			
+			&-imp {
+				@include padding-horizontal($padding-50 !important, $padding-50 !important);
+			}
+		}
+		
+		&--55 {
+			@include padding-horizontal($padding-55, $padding-55);
+			
+			&-imp {
+				@include padding-horizontal($padding-55 !important, $padding-55 !important);
+			}
+		}
+		
+		&--60 {
+			@include padding-horizontal($padding-60, $padding-60);
+			
+			&-imp {
+				@include padding-horizontal($padding-60 !important, $padding-60 !important);
+			}
+		}
+		
+		&--65 {
+			@include padding-horizontal($padding-65, $padding-65);
+			
+			&-imp {
+				@include padding-horizontal($padding-65 !important, $padding-65 !important);
+			}
+		}
+		
+		&--70 {
+			@include padding-horizontal($padding-70, $padding-70);
+			
+			&-imp {
+				@include padding-horizontal($padding-70 !important, $padding-70 !important);
+			}
+		}
+		
+		&--75 {
+			@include padding-horizontal($padding-75, $padding-75);
+			
+			&-imp {
+				@include padding-horizontal($padding-75 !important, $padding-75 !important);
+			}
+		}
+		
+		&--80 {
+			@include padding-horizontal($padding-80, $padding-80);
+			
+			&-imp {
+				@include padding-horizontal($padding-80 !important, $padding-80 !important);
+			}
+		}
+		
+		&--85 {
+			@include padding-horizontal($padding-85, $padding-85);
+			
+			&-imp {
+				@include padding-horizontal($padding-85 !important, $padding-85 !important);
+			}
+		}
+		
+		&--90 {
+			@include padding-horizontal($padding-90, $padding-90);
+			
+			&-imp {
+				@include padding-horizontal($padding-90 !important, $padding-90 !important);
+			}
+		}
+		
+		&--95 {
+			@include padding-horizontal($padding-95, $padding-95);
+			
+			&-imp {
+				@include padding-horizontal($padding-95 !important, $padding-95 !important);
+			}
+		}
+		
+		&--100 {
+			@include padding-horizontal($padding-100, $padding-100);
+			
+			&-imp {
+				@include padding-horizontal($padding-100 !important, $padding-100 !important);
+			}
+		}
+	}
+	
+	&_top {
+		&--0 {
+			@include padding-top(0);
+			
+			&-imp {
+				@include padding-top(0 !important);
+			}
+		}
+		
+		&--5 {
+			@include padding-top($padding-5);
+			
+			&-imp {
+				@include padding-top($padding-5 !important);
+			}
+		}
+		
+		&--10 {
+			@include padding-top($padding-10);
+			
+			&-imp {
+				@include padding-top($padding-10 !important);
+			}
+		}
+		
+		&--15 {
+			@include padding-top($padding-15);
+			
+			&-imp {
+				@include padding-top($padding-15 !important);
+			}
+		}
+		
+		&--20 {
+			@include padding-top($padding-20);
+			
+			&-imp {
+				@include padding-top($padding-20 !important);
+			}
+		}
+		
+		&--25 {
+			@include padding-top($padding-25);
+			
+			&-imp {
+				@include padding-top($padding-25 !important);
+			}
+		}
+		
+		&--30 {
+			@include padding-top($padding-30);
+			
+			&-imp {
+				@include padding-top($padding-30 !important);
+			}
+		}
+		
+		&--35 {
+			@include padding-top($padding-35);
+			
+			&-imp {
+				@include padding-top($padding-35 !important);
+			}
+		}
+		
+		&--40 {
+			@include padding-top($padding-40);
+			
+			&-imp {
+				@include padding-top($padding-40 !important);
+			}
+		}
+		
+		&--45 {
+			@include padding-top($padding-45);
+			
+			&-imp {
+				@include padding-top($padding-45 !important);
+			}
+		}
+		
+		&--50 {
+			@include padding-top($padding-50);
+			
+			&-imp {
+				@include padding-top($padding-50 !important);
+			}
+		}
+		
+		&--55 {
+			@include padding-top($padding-55);
+			
+			&-imp {
+				@include padding-top($padding-55 !important);
+			}
+		}
+		
+		&--60 {
+			@include padding-top($padding-60);
+			
+			&-imp {
+				@include padding-top($padding-60 !important);
+			}
+		}
+		
+		&--65 {
+			@include padding-top($padding-65);
+			
+			&-imp {
+				@include padding-top($padding-65 !important);
+			}
+		}
+		
+		&--70 {
+			@include padding-top($padding-70);
+			
+			&-imp {
+				@include padding-top($padding-70 !important);
+			}
+		}
+		
+		&--75 {
+			@include padding-top($padding-75);
+			
+			&-imp {
+				@include padding-top($padding-75 !important);
+			}
+		}
+		
+		&--80 {
+			@include padding-top($padding-80);
+			
+			&-imp {
+				@include padding-top($padding-80 !important);
+			}
+		}
+		
+		&--85 {
+			@include padding-top($padding-85);
+			
+			&-imp {
+				@include padding-top($padding-85 !important);
+			}
+		}
+		
+		&--90 {
+			@include padding-top($padding-90);
+			
+			&-imp {
+				@include padding-top($padding-90 !important);
+			}
+		}	
+		
+		&--95 {
+			@include padding-top($padding-95);
+			
+			&-imp {
+				@include padding-top($padding-95 !important);
+			}
+		}
+		
+		&--100 {
+			@include padding-top($padding-100);
+			
+			&-imp {
+				@include padding-top($padding-100 !important);
+			}
+		}		
+	}
+	
+	&_right {
+		&--0 {
+			@include padding-right(0);
+			
+			&-imp {
+				@include padding-right(0 !important);
+			}
+		}
+		
+		&--5 {
+			@include padding-right($padding-5);
+			
+			&-imp {
+				@include padding-right($padding-5 !important);
+			}
+		}
+		
+		&--10 {
+			@include padding-right($padding-10);
+			
+			&-imp {
+				@include padding-right($padding-10 !important);
+			}
+		}
+		
+		&--15 {
+			@include padding-right($padding-15);
+			
+			&-imp {
+				@include padding-right($padding-15 !important);
+			}
+		}
+		
+		&--20 {
+			@include padding-right($padding-20);
+			
+			&-imp {
+				@include padding-right($padding-20 !important);
+			}
+		}
+		
+		&--25 {
+			@include padding-right($padding-25);
+			
+			&-imp {
+				@include padding-right($padding-25 !important);
+			}
+		}
+		
+		&--30 {
+			@include padding-right($padding-30);
+			
+			&-imp {
+				@include padding-right($padding-30 !important);
+			}
+		}
+		
+		&--35 {
+			@include padding-right($padding-35);
+			
+			&-imp {
+				@include padding-right($padding-35 !important);
+			}
+		}
+		
+		&--40 {
+			@include padding-right($padding-40);
+			
+			&-imp {
+				@include padding-right($padding-40 !important);
+			}
+		}
+		
+		&--45 {
+			@include padding-right($padding-45);
+			
+			&-imp {
+				@include padding-right($padding-45 !important);
+			}
+		}
+		
+		&--50 {
+			@include padding-right($padding-50);
+			
+			&-imp {
+				@include padding-right($padding-50 !important);
+			}
+		}
+		
+		&--55 {
+			@include padding-right($padding-55);
+			
+			&-imp {
+				@include padding-right($padding-55 !important);
+			}
+		}
+		
+		&--60 {
+			@include padding-right($padding-60);
+			
+			&-imp {
+				@include padding-right($padding-60 !important);
+			}
+		}
+		
+		&--65 {
+			@include padding-right($padding-65);
+			
+			&-imp {
+				@include padding-right($padding-65 !important);
+			}
+		}
+		
+		&--70 {
+			@include padding-right($padding-70);
+			
+			&-imp {
+				@include padding-right($padding-70 !important);
+			}
+		}
+		
+		&--75 {
+			@include padding-right($padding-75);
+			
+			&-imp {
+				@include padding-right($padding-75 !important);
+			}
+		}
+		
+		&--80 {
+			@include padding-right($padding-80);
+			
+			&-imp {
+				@include padding-right($padding-80 !important);
+			}
+		}
+		
+		&--85 {
+			@include padding-right($padding-85);
+			
+			&-imp {
+				@include padding-right($padding-85 !important);
+			}
+		}
+		
+		&--90 {
+			@include padding-right($padding-90);
+			
+			&-imp {
+				@include padding-right($padding-90 !important);
+			}
+		}	
+		
+		&--95 {
+			@include padding-right($padding-95);
+			
+			&-imp {
+				@include padding-right($padding-95 !important);
+			}
+		}
+		
+		&--100 {
+			@include padding-right($padding-100);
+			
+			&-imp {
+				@include padding-right($padding-100 !important);
+			}
+		}		
+	}
+	
+	&_bottom {
+		&--0 {
+			@include padding-bottom(0);
+			
+			&-imp {
+				@include padding-bottom(0 !important);
+			}
+		}
+		
+		&--5 {
+			@include padding-bottom($padding-5);
+			
+			&-imp {
+				@include padding-bottom($padding-5 !important);
+			}
+		}
+		
+		&--10 {
+			@include padding-bottom($padding-10);
+			
+			&-imp {
+				@include padding-bottom($padding-10 !important);
+			}
+		}
+		
+		&--15 {
+			@include padding-bottom($padding-15);
+			
+			&-imp {
+				@include padding-bottom($padding-15 !important);
+			}
+		}
+		
+		&--20 {
+			@include padding-bottom($padding-20);
+			
+			&-imp {
+				@include padding-bottom($padding-20 !important);
+			}
+		}
+		
+		&--25 {
+			@include padding-bottom($padding-25);
+			
+			&-imp {
+				@include padding-bottom($padding-25 !important);
+			}
+		}
+		
+		&--30 {
+			@include padding-bottom($padding-30);
+			
+			&-imp {
+				@include padding-bottom($padding-30 !important);
+			}
+		}
+		
+		&--35 {
+			@include padding-bottom($padding-35);
+			
+			&-imp {
+				@include padding-bottom($padding-35 !important);
+			}
+		}
+		
+		&--40 {
+			@include padding-bottom($padding-40);
+			
+			&-imp {
+				@include padding-bottom($padding-40 !important);
+			}
+		}
+		
+		&--45 {
+			@include padding-bottom($padding-45);
+			
+			&-imp {
+				@include padding-bottom($padding-45 !important);
+			}
+		}
+		
+		&--50 {
+			@include padding-bottom($padding-50);
+			
+			&-imp {
+				@include padding-bottom($padding-50 !important);
+			}
+		}
+		
+		&--55 {
+			@include padding-bottom($padding-55);
+			
+			&-imp {
+				@include padding-bottom($padding-55 !important);
+			}
+		}
+		
+		&--60 {
+			@include padding-bottom($padding-60);
+			
+			&-imp {
+				@include padding-bottom($padding-60 !important);
+			}
+		}
+		
+		&--65 {
+			@include padding-bottom($padding-65);
+			
+			&-imp {
+				@include padding-bottom($padding-65 !important);
+			}
+		}
+		
+		&--70 {
+			@include padding-bottom($padding-70);
+			
+			&-imp {
+				@include padding-bottom($padding-70 !important);
+			}
+		}
+		
+		&--75 {
+			@include padding-bottom($padding-75);
+			
+			&-imp {
+				@include padding-bottom($padding-75 !important);
+			}
+		}
+		
+		&--80 {
+			@include padding-bottom($padding-80);
+			
+			&-imp {
+				@include padding-bottom($padding-80 !important);
+			}
+		}
+		
+		&--85 {
+			@include padding-bottom($padding-85);
+			
+			&-imp {
+				@include padding-bottom($padding-85 !important);
+			}
+		}
+		
+		&--90 {
+			@include padding-bottom($padding-90);
+			
+			&-imp {
+				@include padding-bottom($padding-90 !important);
+			}
+		}	
+		
+		&--95 {
+			@include padding-bottom($padding-95);
+			
+			&-imp {
+				@include padding-bottom($padding-95 !important);
+			}
+		}
+		
+		&--100 {
+			@include padding-bottom($padding-100);
+			
+			&-imp {
+				@include padding-bottom($padding-100 !important);
+			}
+		}		
+	}
+	
+	&_left {
+		&--0 {
+			@include padding-left(0);
+			
+			&-imp {
+				@include padding-left(0 !important);
+			}
+		}
+		
+		&--5 {
+			@include padding-left($padding-5);
+			
+			&-imp {
+				@include padding-left($padding-5 !important);
+			}
+		}
+		
+		&--10 {
+			@include padding-left($padding-10);
+			
+			&-imp {
+				@include padding-left($padding-10 !important);
+			}
+		}
+		
+		&--15 {
+			@include padding-left($padding-15);
+			
+			&-imp {
+				@include padding-left($padding-15 !important);
+			}
+		}
+		
+		&--20 {
+			@include padding-left($padding-20);
+			
+			&-imp {
+				@include padding-left($padding-20 !important);
+			}
+		}
+		
+		&--25 {
+			@include padding-left($padding-25);
+			
+			&-imp {
+				@include padding-left($padding-25 !important);
+			}
+		}
+		
+		&--30 {
+			@include padding-left($padding-30);
+			
+			&-imp {
+				@include padding-left($padding-30 !important);
+			}
+		}
+		
+		&--35 {
+			@include padding-left($padding-35);
+			
+			&-imp {
+				@include padding-left($padding-35 !important);
+			}
+		}
+		
+		&--40 {
+			@include padding-left($padding-40);
+			
+			&-imp {
+				@include padding-left($padding-40 !important);
+			}
+		}
+		
+		&--45 {
+			@include padding-left($padding-45);
+			
+			&-imp {
+				@include padding-left($padding-45 !important);
+			}
+		}
+		
+		&--50 {
+			@include padding-left($padding-50);
+			
+			&-imp {
+				@include padding-left($padding-50 !important);
+			}
+		}
+		
+		&--55 {
+			@include padding-left($padding-55);
+			
+			&-imp {
+				@include padding-left($padding-55 !important);
+			}
+		}
+		
+		&--60 {
+			@include padding-left($padding-60);
+			
+			&-imp {
+				@include padding-left($padding-60 !important);
+			}
+		}
+		
+		&--65 {
+			@include padding-left($padding-65);
+			
+			&-imp {
+				@include padding-left($padding-65 !important);
+			}
+		}
+		
+		&--70 {
+			@include padding-left($padding-70);
+			
+			&-imp {
+				@include padding-left($padding-70 !important);
+			}
+		}
+		
+		&--75 {
+			@include padding-left($padding-75);
+			
+			&-imp {
+				@include padding-left($padding-75 !important);
+			}
+		}
+		
+		&--80 {
+			@include padding-left($padding-80);
+			
+			&-imp {
+				@include padding-left($padding-80 !important);
+			}
+		}
+		
+		&--85 {
+			@include padding-left($padding-85);
+			
+			&-imp {
+				@include padding-left($padding-85 !important);
+			}
+		}
+		
+		&--90 {
+			@include padding-left($padding-90);
+			
+			&-imp {
+				@include padding-left($padding-90 !important);
+			}
+		}	
+		
+		&--95 {
+			@include padding-left($padding-95);
+			
+			&-imp {
+				@include padding-left($padding-95 !important);
+			}
+		}
+		
+		&--100 {
+			@include padding-left($padding-100);
+			
+			&-imp {
+				@include padding-left($padding-100 !important);
+			}
+		}		
+	}
+}

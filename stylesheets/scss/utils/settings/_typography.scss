@@ -1,0 +1,39 @@
+
+/// @name font-family-sans-serif
+/// @author Kamal Sharif
+// $font-family-sans-serif: 'Lato', 'Arial', sans-serif !default;
+
+$font-family-sans-serif:'Roboto', sans-serif !default;
+
+/// @name font-family-serif
+/// @author Kamal Sharif
+// $font-family-serif: 'Lora', 'Times New Roman', serif !default;
+
+$font-family-serif: 'Roboto', serif !default;
+
+
+/// @name font-family-base
+/// @author Kamal Sharif
+$font-family-base: $font-family-sans-serif !default;
+$font-family-heading: $font-family-serif !default;
+
+/// @name font-size-base
+/// @author Kamal Sharif
+$font-size-base: 1.6rem !default;
+
+$font-size-h1: ($font-size-base * 2.25) !default; //3.6rem
+$font-size-h2: ($font-size-base * 1.875) !default; // 3rem
+$font-size-h3: ($font-size-base * 1.5) !default; //2.4rem
+$font-size-h4: ($font-size-base * 1.25) !default; //2rem
+$font-size-h5: ($font-size-base * 1.125) !default; //1.8rem
+$font-size-h6: $font-size-base !default; //1.6rem
+
+$font-weight-900: 900 !default;
+$font-weight-700: 700 !default;
+$font-weight-600: 600 !default;
+$font-weight-400: 400 !default;
+$font-weight-300: 300 !default;
+
+/// @name font-weight-heading
+/// @author Kamal Sharif
+$font-weight-heading: $font-weight-700 !default;

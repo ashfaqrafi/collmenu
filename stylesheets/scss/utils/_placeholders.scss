@@ -1,0 +1,108 @@
+/// placeholder
+
+/// @name box sizing inherit property
+/// @author Kamal Sharif
+/// @access public
+%box-sizing-inherit {
+	box-sizing: inherit;
+}
+
+/// @name Default margin for block elements
+/// @author Kamal Sharif
+/// @access public
+/// @link http://csswizardry.com/2012/06/single-direction-margin-declarations/
+%vertical-rythm {
+	margin: 0 0 1.5rem;
+}
+
+/// @name default heading font & weight for h1-h6
+/// @author Kamal Sharif
+/// @access public
+%heading-type {
+	font-family: $font-family-heading;
+	font-weight: $font-weight-heading;
+}
+
+/// @name transparent background
+/// @author Kamal Sharif
+/// @access public
+%bg-transparent {
+	background: transparent;
+}
+
+/// @name clearfix
+/// @author Kamal Sharif
+/// @access public
+%clearfix {
+	@include clearfix;
+}
+
+/// @name margin-bottom-zero
+/// @author Kamal Sharif
+/// @access Public
+%margin-bottom-zero {
+    margin-bottom: 0;
+}
+
+/// @name border-radius-zero
+/// @author Kamal Sharif
+/// @access Public
+%border-radius-zero {
+    border-radius: 0;
+}
+
+/// @name border-radius-100
+/// @author Kamal Sharif
+/// @access Public
+%border-radius-100 {
+    border-radius: 100%;
+}
+
+/// @name margin-bottom-15px
+/// @author Kamal Sharif
+/// @access Public
+%margin-bottom-15px {
+    margin-bottom: 1.5rem;
+}
+
+/// @name overflow-hidden
+/// @author Kamal Sharif
+/// @access Public
+%overflow-hidden {
+    overflow: hidden;
+}
+
+/// @name overflow-hidden--x
+/// @author Kamal Sharif
+/// @access Public
+%overflow-hidden--x {
+    overflow-x: hidden;
+}
+
+/// @name overflow-hidden--y
+/// @author Kamal Sharif
+/// @access Public
+%overflow-hidden--y {
+    overflow-y: hidden;
+}
+
+/// @name overflow-scroll
+/// @author Kamal Sharif
+/// @access Public
+%overflow-scroll {
+    overflow: scroll;
+}
+
+/// @name overflow-scroll--x
+/// @author Kamal Sharif
+/// @access Public
+%overflow-scroll--x {
+    overflow-x: scroll;
+}
+
+/// @name overflow-scroll--y
+/// @author Kamal Sharif
+/// @access Public
+%overflow-scroll--y {
+    overflow-y: scroll;
+}

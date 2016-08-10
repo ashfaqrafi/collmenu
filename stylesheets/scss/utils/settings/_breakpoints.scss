@@ -1,0 +1,13 @@
+/// @prop breakpoints
+/// @author Kamal Sharif
+/// @access public
+$breakpoints: (
+	'desktop': (min-width: 1100px),
+	'tablet-landscape': (max-width: 1100px),
+	'tablet-portrait': (max-width: 850px),
+	'androidtab': (min-width: 768px),
+	'phablet': (max-width: 480px),
+	'mobile': (max-width: 365px),
+	'below-768': (min-width: 768px),
+
+) !default;

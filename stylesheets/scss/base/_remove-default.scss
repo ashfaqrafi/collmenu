@@ -1,0 +1,17 @@
+// scss-lint:disable all
+
+// remove margin bottom because it conflicts with bootstrap clearfix
+.remove_mrgn--bottom {
+    margin-bottom: 0;
+    
+    blockquote,
+    canvas, dd, dl,
+    fieldset, figcaption,
+    form, h1, h2, h3,
+    h4, h5, h6, hgroup,
+    hr, main, noscript,
+    ol, output, p, pre, table, tfoot, ul,
+    video {
+        margin-bottom: 0;
+    }
+}

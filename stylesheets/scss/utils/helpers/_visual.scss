@@ -1,0 +1,60 @@
+// scss-lint:disable NestingDepth, ImportantRule, SelectorFormat
+
+
+.border_none {
+    border: none;
+
+	&--imp {
+		border: none !important;
+	}
+}
+
+.border_radius {
+    &--0 {
+        border-radius: 0;
+
+        &-imp {
+            border-radius: 0 !important;
+        }
+    }
+
+    &--3 {
+        border-radius: 0.3rem;
+
+        &-imp {
+            border-radius: 0.3rem !important;
+        }
+    }
+
+    &--35 {
+        border-radius: 3.5rem;
+
+        &-imp {
+            border-radius: 3.5rem !important;
+        }
+    }
+
+    &--100 {
+        border-radius: 100%;
+
+        &-imp {
+            border-radius: 100% !important;
+        }
+    }
+}
+
+.bg_none {
+    background: none;
+
+	&--imp {
+		background: none !important;
+	}
+}
+
+.outline_zero {
+	outline: 0;
+
+	&--imp {
+		outline: 0 !important;
+	}
+}

@@ -1,0 +1,147 @@
+// ================================ Utility =================================
+
+// utility classes are useful for quick hacks which require single specific property.
+// every corresponding class has an !important version associated with it for greater
+// flexibility. Use both type according to the needs.
+
+// scss-lint:disable NestingDepth, ImportantRule
+
+
+.txt {
+	&_left {
+		@include text-align(left);
+		
+		&--imp {
+			@include text-align(left !important);
+		}
+	}
+	
+	&_center {
+		@include text-align(center);
+		
+		&--imp {
+			@include text-align(center !important);
+		}
+	}
+	
+	&_right {
+		@include text-align(right);
+		
+		&--imp {
+			@include text-align(right !important);
+		}
+	}
+	
+	&_justify {
+		@include text-align(justify);
+		
+		&--imp {
+			@include text-align(justify !important);
+		}
+	}
+	
+	&_uppercase {
+		text-transform: uppercase;
+		
+		&--imp {
+			text-transform: uppercase !important;
+		}
+	}
+}
+
+// these font classes may become handy in emergency situation like
+// last minuite quick fixes
+
+.font {
+	&_weight {
+		&--300 {
+			@include font-weight(300);
+			
+			&-imp {
+				@include font-weight(300 !important);
+			}
+		}
+		
+		&--400 {
+			@include font-weight(400);
+			
+			&-imp {
+				@include font-weight(400 !important);
+			}
+		}
+		
+		&--600 {
+			@include font-weight(600);
+			
+			&-imp {
+				@include font-weight(600 !important);
+			}
+		}
+		
+		&--700 {
+			@include font-weight(700);
+			
+			&-imp {
+				@include font-weight(700 !important);
+			}
+		}
+		
+		&--800 {
+			@include font-weight(800);
+			
+			&-imp {
+				@include font-weight(800 !important);
+			}
+		}
+	}
+	
+	&_size {
+		&--10px {
+			@include font-size(1rem);
+			
+			&-imp {
+				@include font-size(1rem !important);
+			}
+		}
+		
+		&--12px {
+			@include font-size(1.2rem);
+			
+			&-imp {
+				@include font-size(1.2rem !important);
+			}
+		}
+		
+		&--14px {
+			@include font-size(1.4rem);
+			
+			&-imp {
+				@include font-size(1.4rem !important);
+			}
+		}
+		
+		&--16px {
+			@include font-size(1.6rem);
+			
+			&-imp {
+				@include font-size(1.6rem !important);
+			}
+		}
+		
+		&--18px {
+			@include font-size(1.8rem);
+			
+			&-imp {
+				@include font-size(1.8rem !important);
+			}
+		}
+		
+		&--20px {
+			@include font-size(2rem);
+			
+			&-imp {
+				@include font-size(2rem !important);
+			}
+		}
+	}
+}

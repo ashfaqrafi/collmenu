@@ -1,0 +1,51 @@
+/// @name frm-ctrl-placeholder
+/// @author Kamal Sharif
+/// @access public
+
+@mixin frm-ctrl-placeholder() {
+  &::placeholder {
+    @include font-size-color($color: map-deep-get($colors, 'foreground', 'light'));
+    // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+    opacity: 1;
+  }
+
+}
+
+
+/// @name frm-ctrl-focus
+/// @author Kamal Sharif
+/// @access public
+
+@mixin frm-ctrl-focus($borde-color-focus: map-deep-get($colors, 'primary', 'base'), $shadow-color: rgba(242, 239, 59, 0.6)) {
+  &:focus {
+    border-color: $borde-color-focus;
+    outline: none;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px $shadow-color;
+  }
+}
+
+
+/// @name frm-ctrl
+/// @author Kamal Sharif
+/// @access public
+
+// 1. Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214.
+@mixin frm-ctrl($height: 3.5rem, $width: 85%, $left-padding: 1.5rem, $bg: map-deep-get($colors, 'background', 'base'), $bg-clip: border-box,
+$border-width: 1px, $border-color: map-deep-get($colors, 'border', 'form'), $border-radius: 0) {
+  height: $height;
+  width: calc(#{$width} - #{$left-padding});
+  padding-left: $left-padding;
+  display: block;
+
+  @include type-style();
+
+  background-color: $bg;
+  background-image: none; //[1]
+  background-clip: $bg-clip;
+  border: $border-width solid $border-color;
+  border-radius: $border-radius;
+
+  @include frm-ctrl-focus();
+
+  @include frm-ctrl-placeholder();
+}
